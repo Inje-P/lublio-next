@@ -1,0 +1,83 @@
+/*
+ * ──────────────────────────────
+ * TABLE
+ * ──────────────────────────────
+ */
+
+.tableHorizontal {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  background-color: var(--stone200);
+  border-radius: 10px;
+}
+
+.column {
+  display: table-cell;
+  text-align: left;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.columnHeader {
+  text-align: center;
+  background-color: var(--stone600);
+  border-radius: 10px;
+}
+
+.columnHeader > p {
+  color: var(--stone100);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.row {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+.row > p {
+  color: var(--stone700);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.row:hover {
+  cursor: pointer;
+  background-color: var(--stone300);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .columnHeader > p {
+    font-size: 18px;
+  }
+
+  .row > p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 688px) {
+  .column {
+    padding: 10px;
+  }
+
+  .columnHeader > p {
+    font-size: 14px;
+  }
+
+  .row > p {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+}

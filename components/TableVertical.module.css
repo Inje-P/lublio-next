@@ -1,0 +1,85 @@
+/*
+ * ──────────────────────────────
+ * TABLE
+ * ──────────────────────────────
+ */
+
+.tableVertical {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  background-color: var(--stone200);
+  border-radius: 10px;
+}
+
+.row {
+  display: table-row;
+}
+
+.rowHeader {
+  display: table-cell;
+  text-align: center;
+  padding: 10px;
+}
+
+.rowHeader > p {
+  background-color: var(--stone600);
+  color: var(--stone100);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.column {
+  display: table-cell;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.column > p {
+  color: var(--stone700);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  transition: 0.3s all;
+}
+
+.column:hover {
+  cursor: pointer;
+}
+
+.column:hover > p {
+  background-color: var(--stone300);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .rowHeader > p {
+    font-size: 18px;
+  }
+
+  .column > p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 688px) {
+  .rowHeader > p {
+    font-size: 14px;
+  }
+
+  .column > p {
+    font-size: 14px;
+  }
+}
