@@ -12,7 +12,8 @@
   font-weight: 500;
   letter-spacing: 0px;
   margin-bottom: 20px;
-  background-color: var(--stone200);
+  background-color: transparent;
+  border: 1px solid var(--zinc700);
   border-radius: 10px;
 }
 
@@ -25,13 +26,18 @@
 
 .columnHeader {
   text-align: center;
-  background-color: var(--stone600);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(135deg,
+      var(--zinc800) 0%,
+      var(--zinc900) 20%,
+      var(--zinc950) 100%);
+  border: 1px solid var(--zinc700);
   border-radius: 10px;
 }
 
-.columnHeader > p {
-  color: var(--stone100);
-  font-weight: 500;
+.columnHeader>p {
+  color: var(--zinc300);
+  font-weight: 400;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -39,29 +45,31 @@
 .row {
   background-color: transparent;
   border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid transparent;
   transition: 0.3s all;
 }
 
-.row > p {
-  color: var(--stone700);
+.row>p {
+  color: var(--zinc300);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 10px 0;
   padding-left: 10px;
 }
 
 .row:hover {
   cursor: pointer;
-  background-color: var(--stone300);
+  border: 1px solid var(--zinc700);
 }
 
 /* Tablet */
 @media (max-width: 992px) {
-  .columnHeader > p {
+  .columnHeader>p {
     font-size: 18px;
   }
 
-  .row > p {
+  .row>p {
     font-size: 18px;
   }
 }
@@ -72,11 +80,11 @@
     padding: 10px;
   }
 
-  .columnHeader > p {
+  .columnHeader>p {
     font-size: 14px;
   }
 
-  .row > p {
+  .row>p {
     font-size: 14px;
     padding-left: 5px;
   }

@@ -50,11 +50,11 @@ export default function RussianPhrasebook() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>Germany | Lublio</title>
+        <title>Russia | Lublio</title>
       </Head>
       <Header />
       <div className="wrapper">
-        <h1>Germany</h1>
+        <h1>Russia</h1>
         <Breadcrumbs />
         <RussianCities />
       </div>

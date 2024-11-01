@@ -15,13 +15,13 @@
   z-index: 0;
   text-decoration: none;
   box-shadow: none;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
   background-color: transparent;
   transition: all 0.4s;
 }
 
 .styledBoxHero:hover {
-  background-color: var(--stone200);
+  background-color: var(--zinc900);
   cursor: pointer;
 }
 
@@ -72,7 +72,7 @@
 .styledBoxHero > h4,
 .styledBoxHero > span,
 .styledBoxHero > p {
-  color: var(--stone700);
+  color: var(--zinc300);
 }
 
 .arrow {
@@ -100,8 +100,8 @@
 }
 
 .styledBoxHero .arrow span {
-  border-bottom: 3px solid var(--stone700);
-  border-right: 3px solid var(--stone700);
+  border-bottom: 3px solid var(--zinc300);
+  border-right: 3px solid var(--zinc300);
 }
 
 .arrow span:nth-child(2) {
@@ -213,8 +213,8 @@
   }
 
   .styledBoxHero .arrow span {
-    border-bottom: 2px solid var(--stone700);
-    border-right: 2px solid var(--stone700);
+    border-bottom: 2px solid var(--zinc700);
+    border-right: 2px solid var(--zinc700);
   }
 }
 
