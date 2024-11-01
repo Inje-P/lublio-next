@@ -32,14 +32,14 @@
   margin-bottom: 20px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
   transition: 1s all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .typewriter:hover {
-  box-shadow: 0 0 0 10px var(--stone100) inset, 0 0 0 11px var(--stone700) inset,
-    0 0 0 21px var(--stone100) inset, 0 0 0 22px var(--stone700) inset,
-    0 0 0 32px var(--stone100) inset, 0 0 0 33px var(--stone700) inset;
+  box-shadow: 0 0 0 10px var(--zinc950) inset, 0 0 0 11px var(--zinc700) inset,
+    0 0 0 21px var(--zinc950) inset, 0 0 0 22px var(--zinc700) inset,
+    0 0 0 32px var(--zinc950) inset, 0 0 0 33px var(--zinc700) inset;
 }
 
 .typewriter > h1 {

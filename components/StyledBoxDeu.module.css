@@ -16,14 +16,14 @@
   outline: none;
   z-index: 0;
   text-decoration: none;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
   background: transparent;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .styledBox:hover {
   cursor: pointer;
-  background-color: var(--stone200);
+  background-color: var(--zinc900);
 }
 
 .styledBox > h2 {
@@ -73,7 +73,7 @@
 .styledBox > h4,
 .styledBox > span,
 .styledBox > p {
-  color: var(--stone700);
+  color: var(--zinc300);
 }
 
 /* Moving Item */

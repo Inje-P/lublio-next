@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import StyledBoxHero from "@/components/StyledBoxHero";
 import Typewriter from "typewriter-effect";
-import MainImage from "@/public/images/main.jpg";
+import MainImage from "@/public/images/hero.jpg";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 

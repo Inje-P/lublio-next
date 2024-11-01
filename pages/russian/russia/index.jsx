@@ -207,7 +207,7 @@ export default function AboutRussia() {
             key={chapter.index}
             path={"/russian/russia/" + chapter.index}
             title={chapter.city}
-            subtitle={chapter.bundesland}
+            subtitle={chapter.region}
             description={chapter.introduction}
           />
         ))}

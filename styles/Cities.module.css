@@ -1,0 +1,15 @@
+.articleBox {
+    margin-bottom: 20px;
+}
+
+.articleBox>p {
+    color: var(--zinc400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.articleBox>p:last-child {
+    margin-bottom: 0px;
+}
