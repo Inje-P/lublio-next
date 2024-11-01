@@ -58,10 +58,15 @@ const Header = () => {
               </Link>
             </li>
             <li>
+              <Link href="/russian" className={styles.mainMenuLink}>
+                Russian
+              </Link>
+            </li>
+            {/* <li>
               <Link href="/german" className={styles.mainMenuLink}>
                 German
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/" className={styles.mainMenuLink}>
                 About
@@ -89,14 +94,12 @@ const Header = () => {
             </li>
             <li>
               <Link href="/french" className={styles.menuLink}>
-                <span className="material-symbols-outlined">
-                  change_history
-                </span>
+                <span className="material-symbols-outlined">airwave</span>
               </Link>
             </li>
             <li>
-              <Link href="/german" className={styles.menuLink}>
-                <span className="material-symbols-outlined">square</span>
+              <Link href="/russian" className={styles.menuLink}>
+                <span className="material-symbols-outlined">ac_unit</span>
               </Link>
             </li>
             <li>

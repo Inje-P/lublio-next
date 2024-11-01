@@ -83,11 +83,17 @@ export default function Home() {
                 description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
               />
               <StyledBoxHero
+                path="/russian"
+                title="Русский"
+                subtitle="Russian"
+                description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
+              />
+              {/* <StyledBoxHero
                 path="/german"
                 title="Deutsch"
                 subtitle="German"
                 description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
-              />
+              /> */}
             </div>
           </div>
         </div>

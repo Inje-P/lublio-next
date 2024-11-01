@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import StyledBoxFra from "@/components/StyledBoxFra";
+import StyledBoxRus from "@/components/StyledBoxRus";
 import Header from "@/components/Header";
 
-export default function French() {
+export default function Russian() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -46,47 +46,47 @@ export default function French() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>French | Lublio</title>
+        <title>Russian | Lublio</title>
       </Head>
       <Header />
       <div className="wrapper">
-        <h1>French</h1>
+        <h1>Russian</h1>
         <Breadcrumbs />
-        <StyledBoxFra
-          path="/french/a1"
+        <StyledBoxRus
+          path="/russian/a1"
           title="A1"
           subtitle="Beginner"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxFra
-          path="/french/a2"
+        <StyledBoxRus
+          path="/russian/a2"
           title="A2"
           subtitle="Elementary"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxFra
-          path="/french/b1"
+        <StyledBoxRus
+          path="/russian/b1"
           title="B1"
           subtitle="Intermediate"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxFra
-          path="/french/b2"
+        <StyledBoxRus
+          path="/russian/b2"
           title="B2"
           subtitle="Upper intermediate"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxFra
-          path="/french/phrasebook"
-          title="Guide de conversation"
+        <StyledBoxRus
+          path="/russian/phrasebook"
+          title="Разговорник"
           subtitle="Phrasebook"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxFra
-          path="/french/france"
-          title="République Française"
-          subtitle="About France"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
+        <StyledBoxRus
+          path="/russian/russia"
+          title="Российская Федерация"
+          subtitle="About Russia"
+          description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
       </div>
     </>

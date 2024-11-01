@@ -1,10 +1,14 @@
 import Head from "next/head";
-import { useEffect } from "react";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import StyledBoxFra from "@/components/StyledBoxFra";
 import Header from "@/components/Header";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import RussianCities from "./RussianCities";
 
-export default function French() {
+export default function RussianPhrasebook() {
+  const router = useRouter();
+  const chapter = router.query.id;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -46,48 +50,13 @@ export default function French() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>French | Lublio</title>
+        <title>Germany | Lublio</title>
       </Head>
       <Header />
       <div className="wrapper">
-        <h1>French</h1>
+        <h1>Germany</h1>
         <Breadcrumbs />
-        <StyledBoxFra
-          path="/french/a1"
-          title="A1"
-          subtitle="Beginner"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
-        <StyledBoxFra
-          path="/french/a2"
-          title="A2"
-          subtitle="Elementary"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
-        <StyledBoxFra
-          path="/french/b1"
-          title="B1"
-          subtitle="Intermediate"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
-        <StyledBoxFra
-          path="/french/b2"
-          title="B2"
-          subtitle="Upper intermediate"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
-        <StyledBoxFra
-          path="/french/phrasebook"
-          title="Guide de conversation"
-          subtitle="Phrasebook"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
-        <StyledBoxFra
-          path="/french/france"
-          title="République Française"
-          subtitle="About France"
-          description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-        />
+        <RussianCities />
       </div>
     </>
   );
