@@ -35,21 +35,11 @@ const Header = () => {
             <h1>LVBLIO</h1>
           </Link>
         </div>
-        <span id={styles.profile} className="material-symbols-outlined">
-          account_circle
-        </span>
-        <span
-          id={styles.menu}
-          className="material-symbols-outlined"
-          onClick={() => setMenuOpen(true)}
-        >
-          menu
-        </span>
         <div className={styles.mainMenu}>
           <ul>
             <li>
               <Link href="/" className={styles.mainMenuLink}>
-                Home
+                About
               </Link>
             </li>
             <li>
@@ -67,13 +57,18 @@ const Header = () => {
                 Russian
               </Link>
             </li>
-            <li>
-              <Link href="/" className={styles.mainMenuLink}>
-                About
-              </Link>
-            </li>
           </ul>
         </div>
+        <span id={styles.profile} className="material-symbols-outlined">
+          account_circle
+        </span>
+        <span
+          id={styles.menu}
+          className="material-symbols-outlined"
+          onClick={() => setMenuOpen(true)}
+        >
+          menu
+        </span>
       </header>
       <div
         className={

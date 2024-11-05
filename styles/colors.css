@@ -2,8 +2,9 @@
   /* Common */
   --white: #ffffff;
   --black: #000000;
-  --headerBackground: rgba(9, 9, 11, 0.7);
+  --headerBackground: rgba(245, 245, 244, 0.8);
   --headerBorder: #ddd;
+  --hero: #6a995b;
 
   /* Slate */
   --slate50: #f8fafc;

@@ -6,7 +6,7 @@ const BoxRus = (props) => {
   return (
     <>
       <Link href={path}>
-        <div className={styles.styledBox}>
+        <div className={styles.box}>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
           <div className={styles.item}>

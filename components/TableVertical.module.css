@@ -14,7 +14,7 @@
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid var(--zinc700);
+  border: 1px solid var(--stone400);
   border-radius: 10px;
 }
 
@@ -28,14 +28,9 @@
   padding: 10px;
 }
 
-.rowHeader>p {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(135deg,
-      var(--zinc800) 0%,
-      var(--zinc900) 20%,
-      var(--zinc950) 100%);
-  border: 1px solid var(--zinc700);
-  color: var(--zinc300);
+.rowHeader > p {
+  background: var(--stone500);
+  color: var(--stone100);
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
@@ -50,10 +45,10 @@
   padding: 10px;
 }
 
-.column>p {
-  color: var(--zinc300);
+.column > p {
+  color: var(--stone700);
   border: 1px solid transparent;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -65,28 +60,28 @@
   cursor: pointer;
 }
 
-.column:hover>p {
-  border: 1px solid var(--zinc700);
+.column:hover > p {
+  border: 1px solid var(--stone700);
 }
 
 /* Tablet */
 @media (max-width: 992px) {
-  .rowHeader>p {
+  .rowHeader > p {
     font-size: 18px;
   }
 
-  .column>p {
+  .column > p {
     font-size: 18px;
   }
 }
 
 /* Mobile */
 @media (max-width: 688px) {
-  .rowHeader>p {
+  .rowHeader > p {
     font-size: 14px;
   }
 
-  .column>p {
+  .column > p {
     font-size: 14px;
   }
 }

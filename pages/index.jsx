@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import BoxHero from "@/components/BoxHero";
 import Typewriter from "typewriter-effect";
-import MainImage from "@/public/images/hero.jpg";
+import MainImage from "@/public/images/hero.png";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 
@@ -50,15 +51,13 @@ export default function Home() {
       <div className="wrapper">
         <div className={styles.main}>
           <div className={styles.mainLeft}>
-            <Image
-              src={MainImage}
-              alt="Main Image"
-              className={styles.mainImage}
-              priority="true"
-            />
+            <h1>Embark on a journey where</h1>
+            <h1 style={{ color: "var(--hero)" }}>
+              every word opens new horizons.
+            </h1>
           </div>
           <div className={styles.mainRight}>
-            <div className={styles.typewriter}>
+            <div className={styles.mainRightTop}>
               <h1>
                 <Typewriter
                   options={{
@@ -66,6 +65,7 @@ export default function Home() {
                       "Embark on your language learning journey.",
                       "Lancez-vous dans l'apprentissage d'une langue.",
                       "Beginnen Sie Ihre Reise zum Sprachenlernen.",
+                      "Начните свое путешествие по изучению языка.",
                     ],
                     autoStart: true,
                     loop: true,
@@ -75,8 +75,25 @@ export default function Home() {
                 />
               </h1>
             </div>
-            <div className={styles.mainLanguages}>
-              <BoxHero
+            <div className={styles.mainRightBottom}>
+              <ul>
+                <li>
+                  <Link href="/french" className={styles.heroLink}>
+                    <p>FR</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/german" className={styles.heroLink}>
+                    <p>DE</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/russian" className={styles.heroLink}>
+                    <p>RU</p>
+                  </Link>
+                </li>
+              </ul>
+              {/* <BoxHero
                 path="/french"
                 title="Français"
                 subtitle="French"
@@ -93,10 +110,18 @@ export default function Home() {
                 title="Русский"
                 subtitle="Russian"
                 description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
-              />
+              /> */}
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero">
+        <Image
+          src={MainImage}
+          alt="Main Image"
+          className={styles.mainImage}
+          priority="true"
+        />
       </div>
     </>
   );

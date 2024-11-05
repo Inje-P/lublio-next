@@ -16,14 +16,14 @@
   outline: none;
   z-index: 0;
   text-decoration: none;
-  border: 1px solid var(--zinc700);
+  border: 1px solid var(--stone700);
   background: transparent;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .box:hover {
   cursor: pointer;
-  background-color: var(--zinc900);
+  background-color: var(--stone200);
 }
 
 .box > h2 {
@@ -73,7 +73,7 @@
 .box > h4,
 .box > span,
 .box > p {
-  color: var(--zinc300);
+  color: var(--stone700);
 }
 
 /* Moving Item */

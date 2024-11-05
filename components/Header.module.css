@@ -1,27 +1,31 @@
 .header {
-  position: fixed;
-  display: block;
-  width: 200px;
-  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
   z-index: 99;
-  border-right: 1px solid var(--zinc700);
+  padding: 0 30px;
   transition: all 0.4s;
+  background-color: transparent;
 }
 
 #profile,
 #menu {
-  position: absolute;
+  position: relative;
   display: block;
-  color: var(--zinc300);
+  color: var(--stone700);
   font-size: 24px;
   font-weight: 300;
+  width: 24px;
   transition: all 0.3s;
 }
 
 #profile {
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
 }
 
 #menu {
@@ -31,7 +35,7 @@
 #profile:hover,
 #menu:hover {
   cursor: pointer;
-  color: var(--zinc500);
+  color: var(--stone500);
 }
 
 .overlay {
@@ -40,55 +44,48 @@
 
 .logo {
   display: block;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  height: auto;
+  width: 100px;
 }
 
 .logo > a > h1 {
   display: block;
   font-size: 26px;
   font-weight: 600;
-  letter-spacing: 2px;
+  margin-bottom: 0px;
   transition: 0.4s all;
 }
 
 .logo > a > h1:hover {
-  letter-spacing: 5px;
-  color: var(--zinc500);
+  color: var(--stone500);
 }
 
 .mainMenu {
+  position: relative;
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .mainMenu > ul {
-  width: 100px;
+  display: flex;
   list-style: none;
-  text-align: center;
+  width: 100%;
 }
 
 .mainMenu > ul > li {
-  margin: 60px 0px;
+  margin: 0 10px;
 }
 
 .mainMenuLink {
   font-family: "Inter", sans-serif;
-  color: var(--zinc300);
+  color: var(--stone700);
   font-size: 15px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 500;
   transition: all 0.4s;
 }
 
 .mainMenuLink > span {
-  color: var(--zinc300);
+  color: var(--stone700);
   font-size: 24px;
   font-weight: 300;
   margin-right: 5px;
@@ -99,8 +96,7 @@
 .mainMenuLink:hover,
 .mainMenuLink:hover > span {
   cursor: pointer;
-  color: var(--zinc500);
-  letter-spacing: 5px;
+  color: var(--stone500);
 }
 
 /* Mobile & Tablet */
@@ -109,15 +105,11 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--zinc700);
     align-items: center;
-    padding: 0px 20px;
+    width: 100%;
+    height: 60px;
     z-index: 99;
-    height: 70px;
+    padding: 0 30px;
     transition: all 0.4s;
   }
 
@@ -129,7 +121,7 @@
   .header > #menu {
     position: relative;
     display: block;
-    color: var(--zinc300);
+    color: var(--stone700);
     font-size: 24px;
     font-weight: 300;
     transition: all 0.3s;
@@ -144,7 +136,7 @@
   .header > #profile:hover,
   .header > #menu:hover {
     cursor: pointer;
-    color: var(--zinc500);
+    color: var(--stone500);
   }
 
   .mainMenu {
@@ -152,6 +144,7 @@
   }
 
   .logo {
+    position: absolute;
     height: 25px;
     top: 50%;
     left: 50%;
@@ -192,7 +185,7 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50px;
-    border: 1px solid var(--zinc700);
+    border: 1px solid var(--stone700);
     background-color: var(--headerBackground);
     font-family: "Inter", sans-serif;
     transition: all 0.5s ease 0s;
@@ -201,7 +194,7 @@
   .overlayActive {
     opacity: 1;
     right: 10px;
-    height: 320px;
+    height: 300px;
   }
 
   .close {
@@ -224,15 +217,14 @@
     transform: translateX(-50%);
     font-size: 25px;
     text-decoration: none;
-    font-weight: 300;
-    color: var(--zinc300);
+    color: var(--stone700);
     cursor: pointer;
     transition: all 0.3s;
   }
 
   .overlayActive .close:hover {
     cursor: pointer;
-    color: var(--zinc500);
+    color: var(--stone500);
   }
 
   .overlayContent {
@@ -286,7 +278,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    color: var(--zinc300);
+    color: var(--stone700);
     transition: all 0.5s;
   }
 
@@ -295,7 +287,7 @@
   }
 
   .menuLink:hover > span {
-    color: var(--zinc500);
+    color: var(--stone500);
     cursor: pointer;
   }
 }

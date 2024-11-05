@@ -54,26 +54,26 @@ export default function German() {
         <Breadcrumbs />
         <BoxDeu
           path="/german/a1"
-          title="Anfänger"
-          subtitle="A1 | Beginner"
+          title="A1"
+          subtitle="Beginner"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
         <BoxDeu
           path="/german/a2"
-          title="Grundstufe"
-          subtitle="A2 | Elementary"
+          title="A2"
+          subtitle="Elementary"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
         <BoxDeu
           path="/german/b1"
-          title="Mittelstufe"
-          subtitle="B1 | Intermediate"
+          title="B1"
+          subtitle="Intermediate"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
         <BoxDeu
           path="/german/b2"
-          title="Obere Mittelstufe"
-          subtitle="B2 | Upper intermediate"
+          title="B2"
+          subtitle="Upper intermediate"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
         <BoxDeu
