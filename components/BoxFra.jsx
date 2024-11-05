@@ -1,12 +1,12 @@
 import Link from "next/link";
-import styles from "./StyledBoxDeu.module.css";
+import styles from "./BoxFra.module.css";
 
-const StyledBoxDeu = (props) => {
+const boxFra = (props) => {
   const { path, title, subtitle, description } = props;
   return (
     <>
       <Link href={path}>
-        <div className={styles.styledBox}>
+        <div className={styles.box}>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
           <div className={styles.item}>
@@ -19,4 +19,4 @@ const StyledBoxDeu = (props) => {
   );
 };
 
-export default StyledBoxDeu;
+export default boxFra;

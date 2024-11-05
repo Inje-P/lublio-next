@@ -1,12 +1,12 @@
 import Link from "next/link";
-import styles from "./StyledBoxHero.module.css";
+import styles from "./BoxHero.module.css";
 
-const StyledBoxHero = (props) => {
+const BoxHero = (props) => {
   const { path, style, title, subtitle, description } = props;
   return (
     <>
       <Link href={path}>
-        <div className={styles.styledBoxHero}>
+        <div className={styles.boxHero}>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
           <div className={styles.arrow}>
@@ -21,4 +21,4 @@ const StyledBoxHero = (props) => {
   );
 };
 
-export default StyledBoxHero;
+export default BoxHero;

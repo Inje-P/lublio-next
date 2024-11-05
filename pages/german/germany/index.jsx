@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionDeu from "@/components/StyledSectionDeu";
-import StyledBoxDeu from "@/components/StyledBoxDeu";
+import BoxDeu from "@/components/BoxDeu";
 import { useEffect } from "react";
 
 export default function AboutGermany() {
@@ -203,7 +203,7 @@ export default function AboutGermany() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxDeu
+          <BoxDeu
             key={chapter.index}
             path={"/german/germany/" + chapter.index}
             title={chapter.city}

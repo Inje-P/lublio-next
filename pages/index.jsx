@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import StyledBoxHero from "@/components/StyledBoxHero";
+import BoxHero from "@/components/BoxHero";
 import Typewriter from "typewriter-effect";
 import MainImage from "@/public/images/hero.jpg";
 import styles from "@/styles/Home.module.css";
@@ -76,24 +76,24 @@ export default function Home() {
               </h1>
             </div>
             <div className={styles.mainLanguages}>
-              <StyledBoxHero
+              <BoxHero
                 path="/french"
                 title="Français"
                 subtitle="French"
                 description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
               />
-              <StyledBoxHero
+              <BoxHero
+                path="/german"
+                title="Deutsch"
+                subtitle="German"
+                description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
+              />
+              <BoxHero
                 path="/russian"
                 title="Русский"
                 subtitle="Russian"
                 description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
               />
-              {/* <StyledBoxHero
-                path="/german"
-                title="Deutsch"
-                subtitle="German"
-                description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
-              /> */}
             </div>
           </div>
         </div>

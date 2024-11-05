@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import StyledBoxRus from "@/components/StyledBoxRus";
+import BoxRus from "@/components/BoxRus";
 import Header from "@/components/Header";
 
 export default function Russian() {
@@ -52,37 +52,37 @@ export default function Russian() {
       <div className="wrapper">
         <h1>Russian</h1>
         <Breadcrumbs />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/a1"
           title="A1"
           subtitle="Beginner"
           description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/a2"
           title="A2"
           subtitle="Elementary"
           description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/b1"
           title="B1"
           subtitle="Intermediate"
           description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/b2"
           title="B2"
           subtitle="Upper intermediate"
           description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/phrasebook"
           title="Разговорник"
           subtitle="Phrasebook"
           description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
         />
-        <StyledBoxRus
+        <BoxRus
           path="/russian/russia"
           title="Российская Федерация"
           subtitle="About Russia"

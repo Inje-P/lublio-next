@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionRus from "@/components/StyledSectionRus";
-import StyledBoxRus from "@/components/StyledBoxRus";
+import BoxRus from "@/components/BoxRus";
 import { useEffect } from "react";
 
 export default function RussianPhrasebook() {
@@ -135,7 +135,7 @@ export default function RussianPhrasebook() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxRus
+          <BoxRus
             key={chapter.id}
             path={"/russian/phrasebook/" + chapter.id}
             title={chapter.title}

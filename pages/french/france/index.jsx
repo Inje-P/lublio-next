@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionFra from "@/components/StyledSectionFra";
-import StyledBoxFra from "@/components/StyledBoxFra";
+import BoxFra from "@/components/BoxFra";
 import { useEffect } from "react";
 
 export default function AboutFrance() {
@@ -203,7 +203,7 @@ export default function AboutFrance() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxFra
+          <BoxFra
             key={chapter.index}
             path={"/french/france/" + chapter.index}
             title={chapter.city}

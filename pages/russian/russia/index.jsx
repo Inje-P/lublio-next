@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionRus from "@/components/StyledSectionRus";
-import StyledBoxRus from "@/components/StyledBoxRus";
+import BoxRus from "@/components/BoxRus";
 import { useEffect } from "react";
 
 export default function AboutRussia() {
@@ -203,7 +203,7 @@ export default function AboutRussia() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxRus
+          <BoxRus
             key={chapter.index}
             path={"/russian/russia/" + chapter.index}
             title={chapter.city}

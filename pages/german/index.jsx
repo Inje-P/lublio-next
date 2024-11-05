@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import StyledBoxDeu from "@/components/StyledBoxDeu";
+import BoxDeu from "@/components/BoxDeu";
 import Header from "@/components/Header";
 
 export default function German() {
@@ -52,37 +52,37 @@ export default function German() {
       <div className="wrapper">
         <h1>German</h1>
         <Breadcrumbs />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/a1"
           title="Anfänger"
           subtitle="A1 | Beginner"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/a2"
           title="Grundstufe"
           subtitle="A2 | Elementary"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/b1"
           title="Mittelstufe"
           subtitle="B1 | Intermediate"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/b2"
           title="Obere Mittelstufe"
           subtitle="B2 | Upper intermediate"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/phrasebook"
           title="Sprachführer"
           subtitle="Phrasebook"
           description="Lublio ist nicht nur das Erlernen einer Sprache, sondern auch die Freiheit, die Welt selbstbewusst zu erkunden."
         />
-        <StyledBoxDeu
+        <BoxDeu
           path="/german/germany"
           title="Bundesrepublik Deutschland"
           subtitle="About Germany"

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import StyledBoxFra from "@/components/StyledBoxFra";
+import BoxFra from "@/components/BoxFra";
 import Header from "@/components/Header";
 
 export default function French() {
@@ -52,37 +52,37 @@ export default function French() {
       <div className="wrapper">
         <h1>French</h1>
         <Breadcrumbs />
-        <StyledBoxFra
+        <BoxFra
           path="/french/a1"
           title="A1"
           subtitle="Beginner"
           description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
         />
-        <StyledBoxFra
+        <BoxFra
           path="/french/a2"
           title="A2"
           subtitle="Elementary"
           description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
         />
-        <StyledBoxFra
+        <BoxFra
           path="/french/b1"
           title="B1"
           subtitle="Intermediate"
           description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
         />
-        <StyledBoxFra
+        <BoxFra
           path="/french/b2"
           title="B2"
           subtitle="Upper intermediate"
           description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
         />
-        <StyledBoxFra
+        <BoxFra
           path="/french/phrasebook"
           title="Guide de conversation"
           subtitle="Phrasebook"
           description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
         />
-        <StyledBoxFra
+        <BoxFra
           path="/french/france"
           title="République Française"
           subtitle="About France"

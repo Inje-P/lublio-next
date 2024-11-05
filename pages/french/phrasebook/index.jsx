@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionFra from "@/components/StyledSectionFra";
-import StyledBoxFra from "@/components/StyledBoxFra";
+import BoxFra from "@/components/BoxFra";
 import { useEffect } from "react";
 
 export default function FrenchPhrasebook() {
@@ -135,7 +135,7 @@ export default function FrenchPhrasebook() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxFra
+          <BoxFra
             key={chapter.id}
             path={"/french/phrasebook/" + chapter.id}
             title={chapter.title}

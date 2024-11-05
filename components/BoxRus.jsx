@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "./StyledBoxFra.module.css";
+import styles from "./BoxRus.module.css";
 
-const StyledBoxFra = (props) => {
+const BoxRus = (props) => {
   const { path, title, subtitle, description } = props;
   return (
     <>
@@ -19,4 +19,4 @@ const StyledBoxFra = (props) => {
   );
 };
 
-export default StyledBoxFra;
+export default BoxRus;

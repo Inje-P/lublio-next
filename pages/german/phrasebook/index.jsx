@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionRus from "@/components/StyledSectionDeu";
-import StyledBoxDeu from "@/components/StyledBoxDeu";
+import BoxDeu from "@/components/BoxDeu";
 import { useEffect } from "react";
 
 export default function RussianPhrasebook() {
@@ -135,7 +135,7 @@ export default function RussianPhrasebook() {
         />
 
         {chapters.map((chapter) => (
-          <StyledBoxDeu
+          <BoxDeu
             key={chapter.id}
             path={"/german/phrasebook/" + chapter.id}
             title={chapter.title}

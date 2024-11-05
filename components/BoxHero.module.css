@@ -1,13 +1,7 @@
-/*
- * ──────────────────────────────
- * STYLED-BOX
- * ──────────────────────────────
- */
-
-.styledBoxHero {
+.boxHero {
   position: relative;
   width: 100%;
-  height: calc(50% - 5px);
+  height: calc(33% - 10px);
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -20,12 +14,12 @@
   transition: all 0.4s;
 }
 
-.styledBoxHero:hover {
+.boxHero:hover {
   background-color: var(--zinc900);
   cursor: pointer;
 }
 
-.styledBoxHero > h2 {
+.boxHero > h2 {
   position: relative;
   display: block;
   width: calc(50% - 30px);
@@ -38,7 +32,7 @@
   transition: all 0.4s;
 }
 
-.styledBoxHero > h3 {
+.boxHero > h3 {
   position: relative;
   display: block;
   width: calc(50% - 30px);
@@ -50,7 +44,7 @@
   transition: all 0.4s;
 }
 
-.styledBoxHero > p {
+.boxHero > p {
   position: absolute;
   width: calc(50% - 30px);
   right: 30px;
@@ -63,15 +57,15 @@
   line-height: 1.4;
 }
 
-.styledBoxHero > p:last-child {
+.boxHero > p:last-child {
   margin-bottom: 0px;
 }
 
-.styledBoxHero > h2,
-.styledBoxHero > h3,
-.styledBoxHero > h4,
-.styledBoxHero > span,
-.styledBoxHero > p {
+.boxHero > h2,
+.boxHero > h3,
+.boxHero > h4,
+.boxHero > span,
+.boxHero > p {
   color: var(--zinc300);
 }
 
@@ -85,7 +79,7 @@
   transition: 0.4s all;
 }
 
-.styledBoxHero:hover .arrow {
+.boxHero:hover .arrow {
   cursor: pointer;
   opacity: 1;
 }
@@ -99,7 +93,7 @@
   animation: animate 1.5s infinite;
 }
 
-.styledBoxHero .arrow span {
+.boxHero .arrow span {
   border-bottom: 3px solid var(--zinc300);
   border-right: 3px solid var(--zinc300);
 }
@@ -127,34 +121,34 @@
 }
 
 @media (max-width: 1200px) {
-  .styledBoxHero > h2 {
+  .boxHero > h2 {
     font-size: 44px;
   }
 
-  .styledBoxHero > h3 {
+  .boxHero > h3 {
     font-size: 18px;
   }
 
-  .styledBoxHero > p {
+  .boxHero > p {
     font-size: 15px;
   }
 }
 
 @media (max-width: 992px) {
-  .styledBoxHero {
+  .boxHero {
     padding: 20px;
   }
 
-  .styledBoxHero > h2 {
+  .boxHero > h2 {
     font-size: 36px;
     margin-bottom: 5px;
   }
 
-  .styledBoxHero > h3 {
+  .boxHero > h3 {
     font-size: 16px;
   }
 
-  .styledBoxHero > p {
+  .boxHero > p {
     font-size: 15px;
     line-height: 1.2;
     width: calc(100% - 40px);
@@ -165,12 +159,12 @@
 
 /* Mobile */
 @media (max-width: 688px) {
-  .styledBoxHero {
+  .boxHero {
     height: 200px;
     padding: 20px;
   }
 
-  .styledBoxHero > h2 {
+  .boxHero > h2 {
     position: absolute;
     width: calc(100% - 40px);
     font-size: 44px;
@@ -180,7 +174,7 @@
     text-align: center;
   }
 
-  .styledBoxHero > h3 {
+  .boxHero > h3 {
     position: absolute;
     width: calc(100% - 40px);
     font-size: 17px;
@@ -189,7 +183,7 @@
     text-align: center;
   }
 
-  .styledBoxHero > p {
+  .boxHero > p {
     display: none;
   }
 
@@ -212,18 +206,18 @@
     animation: animate 1.5s infinite;
   }
 
-  .styledBoxHero .arrow span {
+  .boxHero .arrow span {
     border-bottom: 2px solid var(--zinc700);
     border-right: 2px solid var(--zinc700);
   }
 }
 
 @media (max-width: 480px) {
-  .styledBoxHero > h2 {
+  .boxHero > h2 {
     font-size: 36px;
   }
 
-  .styledBoxHero > h3 {
+  .boxHero > h3 {
     font-size: 16px;
   }
 

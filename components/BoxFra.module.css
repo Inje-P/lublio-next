@@ -4,7 +4,7 @@
  * ──────────────────────────────
  */
 
-.styledBox {
+.box {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -21,12 +21,12 @@
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.styledBox:hover {
+.box:hover {
   cursor: pointer;
   background-color: var(--zinc900);
 }
 
-.styledBox > h2 {
+.box > h2 {
   position: relative;
   display: block;
   width: calc(100% - 40px);
@@ -40,7 +40,7 @@
   transition: all 0.4s;
 }
 
-.styledBox > h3 {
+.box > h3 {
   position: relative;
   display: block;
   font-family: "Inter", sans-serif;
@@ -52,7 +52,7 @@
   transition: all 0.4s;
 }
 
-.styledBox > p {
+.box > p {
   position: absolute;
   width: calc(60% - 40px);
   left: 20px;
@@ -64,21 +64,21 @@
   line-height: 1.4;
 }
 
-.styledBox > p:last-child {
+.box > p:last-child {
   margin-bottom: 0px;
 }
 
-.styledBox > h2,
-.styledBox > h3,
-.styledBox > h4,
-.styledBox > span,
-.styledBox > p {
+.box > h2,
+.box > h3,
+.box > h4,
+.box > span,
+.box > p {
   color: var(--zinc300);
 }
 
 /* Moving Item */
 
-.styledBox .item {
+.box .item {
   position: absolute;
   display: grid;
   top: 30px;
@@ -88,11 +88,11 @@
   transition: all 0.4s ease;
 }
 
-.styledBox:hover .item {
+.box:hover .item {
   opacity: 1;
 }
 
-.styledBox .loader {
+.box .loader {
   display: block;
   position: relative;
   width: 50%;
@@ -100,8 +100,8 @@
   place-items: center;
 }
 
-.styledBox .loader::before,
-.styledBox .loader::after {
+.box .loader::before,
+.box .loader::after {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -109,18 +109,18 @@
   height: 10px;
 }
 
-.styledBox .loader::before,
-.styledBox .loader::after {
-  background-color: var(--amber400);
+.box .loader::before,
+.box .loader::after {
+  background-color: var(--sky500);
 }
 
-.styledBox .loader::before {
+.box .loader::before {
   top: calc(50% - 10px);
   left: calc(50% - 10px);
   animation: loader1 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
 }
 
-.styledBox .loader::after {
+.box .loader::after {
   top: 50%;
   left: 50%;
   animation: loader2 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
@@ -166,15 +166,15 @@
 
 /* Tablet */
 @media (max-width: 992px) {
-  .styledBox > h2 {
+  .box > h2 {
     font-size: 40px;
   }
 
-  .styledBox > h3 {
+  .box > h3 {
     font-size: 24px;
   }
 
-  .styledBox > p {
+  .box > p {
     width: calc(100% - 40px);
     font-size: 18px;
   }
@@ -182,15 +182,15 @@
 
 /* Mobile */
 @media (max-width: 688px) {
-  .styledBox > h2 {
+  .box > h2 {
     font-size: 32px;
   }
 
-  .styledBox > h3 {
+  .box > h3 {
     font-size: 16px;
   }
 
-  .styledBox > p {
+  .box > p {
     font-size: 15px;
   }
 }
