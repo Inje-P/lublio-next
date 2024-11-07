@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import GermanCities from "./GermanCities";
 
-export default function GermanPhrasebook() {
+export default function AboutGermany() {
   const router = useRouter();
   const chapter = router.query.id;
 

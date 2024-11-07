@@ -1,14 +1,10 @@
 import Head from "next/head";
-import Header from "@/components/Header";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
-import FrenchCities from "./FrenchCities";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import BoxIta from "@/components/BoxIta";
+import Header from "@/components/Header";
 
-export default function AboutItaly() {
-  const router = useRouter();
-  const chapter = router.query.id;
-
+export default function Russian() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -50,13 +46,48 @@ export default function AboutItaly() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>France | Lublio</title>
+        <title>Italian | Lublio</title>
       </Head>
       <Header />
       <div className="wrapper">
-        <h1>France</h1>
+        <h1>Italian</h1>
         <Breadcrumbs />
-        <FrenchCities />
+        <BoxIta
+          path="/italian/a1"
+          title="A1"
+          subtitle="Beginner"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
+        <BoxIta
+          path="/italian/a2"
+          title="A2"
+          subtitle="Elementary"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
+        <BoxIta
+          path="/italian/b1"
+          title="B1"
+          subtitle="Intermediate"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
+        <BoxIta
+          path="/italian/b2"
+          title="B2"
+          subtitle="Upper intermediate"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
+        <BoxIta
+          path="/italian/phrasebook"
+          title="Frasario"
+          subtitle="Phrasebook"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
+        <BoxIta
+          path="/italian/italy"
+          title="Repubblica Italiana"
+          subtitle="About Italy"
+          description="Lublio non è solo imparare una lingua, ma anche la libertà di esplorare il mondo in tutta sicurezza."
+        />
       </div>
     </>
   );

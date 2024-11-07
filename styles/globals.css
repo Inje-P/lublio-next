@@ -43,10 +43,27 @@ a:active {
   padding: 30px;
 }
 
+.wrapperNarrow {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  height: auto;
+  padding: 30px;
+}
+
 /* Tablet */
 @media (max-width: 992px) {
   .wrapper {
     width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  .wrapperNarrow {
+    width: 100%;
+    max-width: 688px;
     height: auto;
     padding: 20px;
     margin: 0 auto;

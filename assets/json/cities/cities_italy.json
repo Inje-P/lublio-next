@@ -2,6 +2,8 @@
   {
     "index": 1,
     "city": "Roma",
+    "region": "Lazio",
+    "introduction": "Roma, la capitale d'Italia, è una città ricca di storia millenaria, arte straordinaria e una cultura vibrante che affascina i visitatori di tutto il mondo.",
     "content": {
       "content1": "Roma, la capitale d'Italia, è una città ricca di storia millenaria, arte straordinaria e una cultura vibrante che affascina i visitatori di tutto il mondo. Fondata secondo la leggenda nel 753 a.C., Roma è stata il cuore dell'antico Impero Romano e il centro del mondo occidentale per secoli.",
       "content2": "Oggi, la città conserva testimonianze straordinarie di questo glorioso passato, come il Colosseo, il Pantheon e il Foro Romano, che raccontano storie di battaglie epiche, filosofia, politica e religione. Roma è anche un museo a cielo aperto, con capolavori artistici come la Cappella Sistina di Michelangelo nella Città del Vaticano e opere di artisti rinascimentali e barocchi sparsi in ogni angolo della città.",
@@ -11,6 +13,8 @@
   {
     "index": 2,
     "city": "Milano",
+    "region": "Lombardia",
+    "introduction": "Milano, la capitale della Lombardia e una delle città più dinamiche d'Italia, è rinomata per la sua moda, il design e l'economia vibrante.",
     "content": {
       "content1": "Milano, la capitale della Lombardia e una delle città più dinamiche d'Italia, è rinomata per la sua moda, il design e l'economia vibrante. Con una storia che risale all'epoca romana, Milano è oggi un centro cosmopolita che mescola tradizione e modernità in modo sorprendente. Il Duomo di Milano, un capolavoro di architettura gotica, domina la Piazza del Duomo con la sua maestosità e complessità ornamentale.",
       "content2": "Accanto al Duomo si erge la Galleria Vittorio Emanuele II, un'elegante struttura in stile liberty con negozi di lusso e caffè storici. Milano è anche la capitale della moda italiana, ospitando la settimana della moda di Milano, uno degli eventi più importanti nel calendario internazionale della moda. Oltre alla moda, Milano è nota per la sua scena artistica e culturale, con musei prestigiosi come il Museo del Novecento, che ospita opere di artisti italiani del XX secolo, e la Pinacoteca di Brera, con una collezione di capolavori di artisti come Caravaggio e Bellini.",
@@ -20,6 +24,8 @@
   {
     "index": 3,
     "city": "Napoli",
+    "region": "Campania",
+    "introduction": "Napoli è una delle città più affascinanti e vive d'Italia, rinomata per la sua storia millenaria, la sua cultura vibrante e la sua cucina straordinaria.",
     "content": {
       "content1": "Napoli, situata sul golfo omonimo, è una delle città più affascinanti e vive d'Italia, rinomata per la sua storia millenaria, la sua cultura vibrante e la sua cucina straordinaria. Fondata dai Greci come Neapolis, la città ha visto il passaggio di diverse civiltà, lasciando un patrimonio culturale ricco e diversificato. Il centro storico di Napoli è Patrimonio dell'Umanità UNESCO, caratterizzato da vicoli stretti, chiese barocche e palazzi nobiliari.",
       "content2": "La piazza del Plebiscito, con la sua maestosa basilica di San Francesco di Paola e il Palazzo Reale, rappresenta il cuore pulsante della città. Napoli è famosa per il suo castello dell'Ovo, situato su un'isola nel golfo, e il Maschio Angioino, un'imponente fortezza medievale che domina il porto. La città è celebre anche per il suo patrimonio artistico, con opere d'arte rinascimentali e barocche conservate in musei come il Museo di Capodimonte e il Museo Archeologico Nazionale.",
@@ -29,6 +35,8 @@
   {
     "index": 4,
     "city": "Torino",
+    "region": "Piemonte",
+    "introduction": "Torino, capoluogo del Piemonte, è una città ricca di storia, cultura e raffinatezza.",
     "content": {
       "content1": "Torino, capoluogo del Piemonte, è una città ricca di storia, cultura e raffinatezza. Situata sulle sponde del fiume Po, Torino è famosa per essere stata la prima capitale d'Italia nel XIX secolo e per il suo prestigioso patrimonio architettonico. Il simbolo più iconico di Torino è la Mole Antonelliana, originariamente progettata come sinagoga ma oggi sede del Museo Nazionale del Cinema, che offre una vista mozzafiato sulla città dall'alto della sua cupola.",
       "content2": "Torino è nota anche per la sua tradizione automobilistica, essendo la casa della Fiat, e per essere il luogo di nascita della celebre marca di cioccolato Gianduiotto. Il cuore pulsante della città è Piazza Castello, circondata da palazzi storici come il Palazzo Reale e la Chiesa di San Lorenzo, che ospita la famosa Cappella della Sindone. Torino vanta una vivace scena culturale, con teatri, gallerie d'arte e una delle più importanti collezioni di arte egizia al Museo Egizio, secondo solo a quello del Cairo.",
@@ -38,6 +46,8 @@
   {
     "index": 5,
     "city": "Palermo",
+    "region": "Sicilia",
+    "introduction": "Palermo, capitale della Sicilia, è una città ricca di storia, cultura e tradizioni millenarie.",
     "content": {
       "content1": "Palermo, capitale della Sicilia, è una città ricca di storia, cultura e tradizioni millenarie. Fondata dai Fenici nel VIII secolo a.C., ha subito l'influenza di diverse civiltà mediterranee nel corso dei secoli, contribuendo a creare un patrimonio architettonico e culturale unico nel suo genere.",
       "content2": "Il centro storico di Palermo è un labirinto di strade strette e piazze pittoresche, dominato dalla maestosa Cattedrale di Palermo, un esempio di architettura normanna con influenze gotiche e barocche. La città è famosa anche per i suoi mercati vivaci, come il mercato della Vucciria e il mercato di Ballarò, dove i visitatori possono gustare le prelibatezze della cucina siciliana, tra cui arancini, cannoli e panelle.",
@@ -47,6 +57,8 @@
   {
     "index": 6,
     "city": "Genova",
+    "region": "Liguria",
+    "introduction": "Genova, la capitale della Liguria, è una città ricca di storia marittima e culturale.",
     "content": {
       "content1": "Genova, la capitale della Liguria, è una città ricca di storia marittima e culturale. Situata sulla costa nord-occidentale dell'Italia, Genova è famosa per essere uno dei più importanti porti del Mediterraneo.",
       "content2": "Il suo centro storico è un labirinto di vicoli stretti, chiamati 'caruggi', che si snodano tra antiche chiese, palazzi nobiliari e botteghe artigiane. La città è stata un centro commerciale potente durante il periodo medievale e rinascimentale, dominando il commercio marittimo nel Mediterraneo grazie alla sua flotta e alle sue fiere commerciali.",
@@ -56,6 +68,8 @@
   {
     "index": 7,
     "city": "Bologna",
+    "region": "Emilia-Romagna",
+    "introduction": "Bologna, la capitale dell'Emilia-Romagna, è una città ricca di storia, cultura e gastronomia.",
     "content": {
       "content1": "Bologna, la capitale dell'Emilia-Romagna, è una città ricca di storia, cultura e gastronomia. Conosciuta per la sua antica università, fondata nel 1088, è una delle città universitarie più antiche d'Europa.",
       "content2": "Il centro storico di Bologna è caratterizzato dai suoi portici medievali, che si estendono per circa 40 chilometri, offrendo riparo dai raggi del sole d'estate e dalle piogge invernali. La Piazza Maggiore è il cuore pulsante della città, circondata da edifici storici come il Palazzo Comunale e la Basilica di San Petronio, una delle più grandi chiese in mattoni del mondo.",
@@ -65,6 +79,8 @@
   {
     "index": 8,
     "city": "Firenze",
+    "region": "Toscana",
+    "introduction": "Firenze, situata nel cuore della Toscana, è una città rinomata per la sua ricca storia, la sua arte straordinaria e la sua architettura mozzafiato.",
     "content": {
       "content1": "Firenze, situata nel cuore della Toscana, è una città rinomata per la sua ricca storia, la sua arte straordinaria e la sua architettura mozzafiato. Fondata dai Romani nel I secolo a.C., Firenze è diventata uno dei centri culturali più importanti del Rinascimento italiano.",
       "content2": "La città è famosa per essere stata la patria di grandi artisti come Leonardo da Vinci, Michelangelo, Botticelli e Dante Alighieri. Firenze è rinomata per i suoi capolavori artistici, come la statua di David di Michelangelo, conservata nella Galleria dell'Accademia, e il Duomo di Santa Maria del Fiore, con la sua cupola progettata da Brunelleschi.",
@@ -74,6 +90,8 @@
   {
     "index": 9,
     "city": "Bari",
+    "region": "Puglia",
+    "introduction": "Bari è una città portuale situata sulla costa adriatica della Puglia, nel sud-est dell'Italia.",
     "content": {
       "content1": "Bari è una città portuale situata sulla costa adriatica della Puglia, nel sud-est dell'Italia. Conosciuta per il suo centro storico medievale e la sua posizione strategica sul Mare Adriatico, Bari è diventata un importante centro culturale, economico e commerciale della regione.",
       "content2": "Il cuore pulsante della città è la Basilica di San Nicola, costruita nel XII secolo per ospitare le reliquie di San Nicola di Mira, il santo patrono della città. La basilica è un esempio superbo di architettura romanica pugliese, con la sua facciata imponente e i suoi affreschi medievali.",
@@ -83,6 +101,8 @@
   {
     "index": 10,
     "city": "Catania",
+    "region": "Sicilia",
+    "introduction": "Catania è una città situata sulla costa orientale della Sicilia, ai piedi del maestoso vulcano Etna.",
     "content": {
       "content1": "Catania è una città situata sulla costa orientale della Sicilia, ai piedi del maestoso vulcano Etna. Fondata nel VIII secolo a.C. dai Greci, Catania vanta una ricca storia e un patrimonio culturale affascinante. Il suo centro storico è stato dichiarato Patrimonio dell'Umanità dall'UNESCO per la sua bellezza architettonica e il suo valore storico.",
       "content2": "La città è rinomata per la sua architettura barocca, evidente nelle chiese e nei palazzi nobiliari che adornano le sue strade. La Cattedrale di Sant'Agata, costruita nel XII secolo e dedicata alla patrona della città, è uno dei principali simboli di Catania, con la sua facciata barocca e gli interni riccamente decorati. La Piazza del Duomo è il cuore pulsante di Catania, circondata da edifici storici e animata da mercati colorati e vivaci.",
@@ -92,6 +112,8 @@
   {
     "index": 11,
     "city": "Verona",
+    "region": "Veneto",
+    "introduction": "Verona, situata nella regione del Veneto, è una città intrisa di storia, cultura e romanticismo.",
     "content": {
       "content1": "Verona, situata nella regione del Veneto, è una città intrisa di storia, cultura e romanticismo. È famosa per essere stata il palcoscenico della celebre tragedia di Shakespeare, Romeo e Giulietta, e per il suo ben conservato centro storico, dichiarato Patrimonio dell'Umanità dall'UNESCO.",
       "content2": "Il simbolo più iconico di Verona è l'Arena di Verona, un antico anfiteatro romano del I secolo d.C., che ancora oggi ospita spettacoli lirici e concerti estivi sotto le stelle. Verona è attraversata dal fiume Adige, il secondo fiume più lungo d'Italia, che offre pittoreschi panorami e romantici ponti storici come il Ponte Pietra.",
@@ -101,6 +123,8 @@
   {
     "index": 12,
     "city": "Venezia",
+    "region": "Veneto",
+    "introduction": "Venezia, la città dei canali e dei ponti, è una delle destinazioni più affascinanti e romantiche al mondo.",
     "content": {
       "content1": "Venezia, la città dei canali e dei ponti, è una delle destinazioni più affascinanti e romantiche al mondo. Situata nel nord-est dell'Italia, Venezia è costruita su più di 100 isole nella Laguna Veneta.",
       "content2": "La città è famosa per i suoi canali navigabili, che fungono da strade principali, e per le sue opere d'arte e architettoniche uniche al mondo. Il cuore di Venezia è Piazza San Marco, dominata dalla magnifica Basilica di San Marco con le sue mosaici bizantini e dal Campanile di San Marco che offre una vista mozzafiato sulla città.",
@@ -110,6 +134,8 @@
   {
     "index": 13,
     "city": "Messina",
+    "region": "Sicilia",
+    "introduction": "Messina è una città affascinante situata sulla punta nord-orientale della Sicilia, di fronte al Mar Ionio.",
     "content": {
       "content1": "Messina è una città affascinante situata sulla punta nord-orientale della Sicilia, di fronte al Mar Ionio. Fondata dai Greci nel VIII secolo a.C., Messina è stata attraversata da diverse culture nel corso dei secoli, lasciando un'impronta indelebile sulla sua architettura e cultura. La città è nota per il suo porto storico, uno dei più antichi del Mediterraneo, che ha svolto un ruolo cruciale nel commercio marittimo della regione.",
       "content2": "Il suo simbolo più celebre è il Duomo di Messina, dedicato a Santa Maria Assunta, un esempio magnifico di architettura normanna con influenze gotiche e barocche. La sua facciata è decorata con maestose colonne e statue che raffigurano i santi e gli apostoli. La Fontana di Orione, una delle fontane più grandi d'Italia, si trova nella Piazza del Duomo di Messina, aggiungendo un tocco di splendore al centro storico della città.",
@@ -119,6 +145,8 @@
   {
     "index": 14,
     "city": "Padova",
+    "region": "Veneto",
+    "introduction": "Padova è una città ricca di storia e cultura situata nel nord-est Italia, nella regione del Veneto.",
     "content": {
       "content1": "Padova è una città ricca di storia e cultura situata nel nord-est Italia, nella regione del Veneto. Fondata dagli antichi Romani, Padova ha una storia millenaria che si riflette nei suoi monumenti e nella sua architettura.",
       "content2": "Uno dei simboli più iconici della città è la Basilica di Sant'Antonio, dedicata al famoso santo francescano, nota per i suoi magnifici affreschi e per ospitare la tomba di Sant'Antonio di Padova. La Cappella degli Scrovegni, un capolavoro dell'arte italiana, contiene gli affreschi di Giotto che rappresentano la vita di Cristo e della Vergine Maria, una testimonianza straordinaria del Rinascimento italiano.",
@@ -128,6 +156,8 @@
   {
     "index": 15,
     "city": "Prato",
+    "region": "Toscana",
+    "introduction": "Prato è una città affascinante situata nella regione della Toscana, nel cuore dell'Italia.",
     "content": {
       "content1": "Prato è una città affascinante situata nella regione della Toscana, nel cuore dell'Italia. Conosciuta per la sua lunga tradizione tessile, Prato è stata un centro di produzione di tessuti fin dal Medioevo, mantenendo ancora oggi una forte identità nel settore tessile e della moda.",
       "content2": "Il Museo del Tessuto di Prato è uno dei musei più importanti al mondo nel suo genere, celebrando la storia e l'evoluzione della produzione tessile. La città è dominata dal maestoso Castello dell'Imperatore, una fortezza medievale costruita dall'imperatore Federico II nel XIII secolo, che offre una vista mozzafiato sulla città e sulla campagna circostante.",
@@ -137,6 +167,8 @@
   {
     "index": 16,
     "city": "Trieste",
+    "region": "Friuli-Venezia Giulia",
+    "introduction": "Trieste è una città affascinante situata nel nord-est dell'Italia, sul confine con la Slovenia.",
     "content": {
       "content1": "Trieste è una città affascinante situata nel nord-est dell'Italia, sul confine con la Slovenia. Conosciuta per la sua posizione strategica sul Mar Adriatico, Trieste ha una lunga storia di influenze culturali diverse, riflettendo la sua appartenenza storica a imperi come quello romano, bizantino, asburgico e italiano. Il centro storico della città è caratterizzato da eleganti palazzi neoclassici, caffè storici e piazze animate.",
       "content2": "Il Castello di Miramare, costruito nel XIX secolo per l'arciduca Massimiliano d'Austria, offre una vista spettacolare sul mare e sui giardini circostanti. Trieste è anche conosciuta per la sua vibrante scena letteraria e culturale, con scrittori come Italo Svevo e Umberto Saba che hanno ambientato le loro opere in questa città cosmopolita. Il Caffè degli Specchi, aperto nel 1839, è uno dei caffè più antichi d'Italia e un luogo d'incontro per artisti, intellettuali e visitatori internazionali.",
@@ -146,6 +178,8 @@
   {
     "index": 17,
     "city": "Brescia",
+    "region": "Lombardia",
+    "introduction": "Brescia è una città affascinante nel nord Italia, situata tra Milano e Venezia.",
     "content": {
       "content1": "Brescia è una città affascinante nel nord Italia, situata tra Milano e Venezia. Con una storia che risale all'epoca romana, Brescia è famosa per la sua ricca eredità culturale e architettonica. Il centro storico della città è dominato dalla maestosa Piazza della Loggia, circondata da eleganti palazzi rinascimentali e barocchi.",
       "content2": "La Torre dell'Orologio, un'iconica torre civica, si erge al centro della piazza, offrendo una vista panoramica sulla città. La Cattedrale di Santa Maria Assunta, con la sua facciata romanica e interni decorati, è uno dei principali luoghi di culto di Brescia. La città è anche nota per il suo patrimonio industriale, con una lunga tradizione nella produzione di armi da fuoco, che ha contribuito alla sua prosperità economica nel corso dei secoli.",
@@ -155,6 +189,8 @@
   {
     "index": 18,
     "city": "Parma",
+    "region": "Emilia-Romagna",
+    "introduction": "Parma è una città storica nel nord Italia, rinomata per la sua ricca cultura e la sua straordinaria tradizione gastronomica.",
     "content": {
       "content1": "Parma è una città storica nel nord Italia, rinomata per la sua ricca cultura e la sua straordinaria tradizione gastronomica. Situata nella regione dell'Emilia-Romagna, Parma è celebre per il suo patrimonio artistico e architettonico, che include capolavori rinascimentali e barocchi. Il Duomo di Parma, una maestosa cattedrale con una facciata romanica e un interno ornato da affreschi di Correggio, è uno dei principali siti religiosi della città.",
       "content2": "Il Battistero, accanto al Duomo, presenta una straordinaria cupola affrescata da Antelami. Il Teatro Regio di Parma è famoso per la sua acustica eccezionale e per essere stato la sede di numerose prime mondiali di opere di Giuseppe Verdi. Parma è anche nota per il suo cibo prelibato, tra cui il prosciutto di Parma, il Parmigiano Reggiano e i tortelli di zucca.",
@@ -164,6 +200,8 @@
   {
     "index": 19,
     "city": "Taranto",
+    "region": "Puglia",
+    "introduction": "Taranto è una città affascinante situata nella regione della Puglia, nel sud Italia, famosa per la sua ricca storia e il suo importante patrimonio archeologico.",
     "content": {
       "content1": "Taranto è una città affascinante situata nella regione della Puglia, nel sud Italia, famosa per la sua ricca storia e il suo importante patrimonio archeologico. Conosciuta anche come la \"Città dei Due Mari\", Taranto è circondata dal Mar Ionio e dal Mar Grande, che le conferiscono un'atmosfera unica e suggestiva.",
       "content2": "Il centro storico della città, con le sue stradine tortuose e i suoi edifici antichi, è un vero e proprio museo a cielo aperto. Tra le principali attrazioni di Taranto spicca il Castello Aragonese, una poderosa fortezza che domina il Mar Piccolo e che testimonia il passato militare della città.",
@@ -173,6 +211,8 @@
   {
     "index": 20,
     "city": "Modena",
+    "region": "Emilia-Romagna",
+    "introduction": "Modena è una città storica e affascinante situata nella regione dell'Emilia-Romagna, nel nord Italia.",
     "content": {
       "content1": "Modena è una città storica e affascinante situata nella regione dell'Emilia-Romagna, nel nord Italia. Famosa per il suo ricco patrimonio culturale e gastronomico, Modena è rinomata in tutto il mondo per essere la patria del balsamico e dell'automobile. Il centro storico di Modena è un labirinto di stradine medievali, piazze eleganti e antichi palazzi che raccontano la storia millenaria della città.",
       "content2": "La cattedrale di Modena, un capolavoro di architettura romanica dichiarato Patrimonio dell'Umanità UNESCO, con la sua maestosa facciata e il celebre campanile Ghirlandina, domina il panorama urbano. Accanto alla cattedrale si trova il Palazzo Ducale, un tempo residenza dei duchi d'Este, oggi sede della prestigiosa Accademia Militare. Modena è anche celebre per la sua tradizione culinaria, con piatti iconici come il tortellino e il cotechino serviti con il tradizionale zampone durante le festività natalizie.",

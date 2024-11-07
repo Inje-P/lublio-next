@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import FrenchCities from "./FrenchCities";
+import ItalianCities from "./ItalianCities";
 
 export default function AboutItaly() {
   const router = useRouter();
@@ -50,13 +50,13 @@ export default function AboutItaly() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>France | Lublio</title>
+        <title>Italy | Lublio</title>
       </Head>
       <Header />
-      <div className="wrapper">
-        <h1>France</h1>
+      <div className="wrapperNarrow">
+        <h1>Italy</h1>
         <Breadcrumbs />
-        <FrenchCities />
+        <ItalianCities />
       </div>
     </>
   );

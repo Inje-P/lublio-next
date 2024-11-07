@@ -4,7 +4,7 @@
  * ──────────────────────────────
  */
 
-.styledSectionFra {
+.styledSectionIta {
   position: relative;
   width: 100%;
   height: 300px;
@@ -15,15 +15,15 @@
   margin-bottom: 20px;
   transition: all 0.4s;
   background-color: transparent;
-  border-top: 2px solid var(--sky400);
-  border-bottom: 2px solid var(--sky400);
+  border-top: 2px solid var(--emerald400);
+  border-bottom: 2px solid var(--emerald400);
 }
 
-.styledSectionFra:hover {
+.styledSectionIta:hover {
   cursor: default;
 }
 
-.styledSectionFra .styledSectionFraIcon {
+.styledSectionIta .styledSectionItaIcon {
   position: absolute;
   display: block;
   left: 20px;
@@ -32,13 +32,13 @@
   text-align: left;
 }
 
-.styledSectionFra .styledSectionFraIcon > span {
+.styledSectionIta .styledSectionItaIcon > span {
   font-size: 30px;
   margin-bottom: 0px;
   cursor: default;
 }
 
-.styledSectionFra > p {
+.styledSectionIta > p {
   position: absolute;
   display: block;
   left: 20px;
@@ -54,19 +54,19 @@
 }
 
 @media (max-width: 688px) {
-  .styledSectionFra > p {
+  .styledSectionIta > p {
     font-size: 16px;
   }
 }
 
-.styledSectionFra > p,
-.styledSectionFra .styledSectionFraIcon > span {
-  color: var(--sky400);
+.styledSectionIta > p,
+.styledSectionIta .styledSectionItaIcon > span {
+  color: var(--emerald400);
 }
 
 /* Moving Item */
 
-.styledSectionFra .item {
+.styledSectionIta .item {
   position: absolute;
   display: grid;
   top: 40px;
@@ -76,7 +76,7 @@
   transition: all 0.4s ease;
 }
 
-.styledSectionFra .loader {
+.styledSectionIta .loader {
   display: block;
   position: relative;
   width: 50%;
@@ -84,8 +84,8 @@
   place-items: center;
 }
 
-.styledSectionFra .loader::before,
-.styledSectionFra .loader::after {
+.styledSectionIta .loader::before,
+.styledSectionIta .loader::after {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -96,18 +96,18 @@
   animation: loader 1.2s ease-in-out infinite;
 }
 
-.styledSectionFra .loader::before {
+.styledSectionIta .loader::before {
   left: calc(50% - 15px);
 }
 
-.styledSectionFra .loader::after {
+.styledSectionIta .loader::after {
   left: calc(50% + 10px);
   animation-delay: -0.4s;
 }
 
-.styledSectionFra .loader::before,
-.styledSectionFra .loader::after {
-  background-color: var(--sky400);
+.styledSectionIta .loader::before,
+.styledSectionIta .loader::after {
+  background-color: var(--emerald400);
 }
 
 @keyframes loader {

@@ -3,9 +3,22 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import FrenchCities from "./FrenchCities";
 
-export default function AboutItaly() {
+// Phrasebook
+import ItalianPhrasebook1 from "./ItalianPhrasebook1";
+import ItalianPhrasebook2 from "./ItalianPhrasebook2";
+import ItalianPhrasebook3 from "./ItalianPhrasebook3";
+import ItalianPhrasebook4 from "./ItalianPhrasebook4";
+import ItalianPhrasebook5 from "./ItalianPhrasebook5";
+import ItalianPhrasebook6 from "./ItalianPhrasebook6";
+import ItalianPhrasebook7 from "./ItalianPhrasebook7";
+import ItalianPhrasebook8 from "./ItalianPhrasebook8";
+import ItalianPhrasebook9 from "./ItalianPhrasebook9";
+import ItalianPhrasebook10 from "./ItalianPhrasebook10";
+import ItalianPhrasebook11 from "./ItalianPhrasebook11";
+import ItalianPhrasebook12 from "./ItalianPhrasebook12";
+
+export default function ItalianPhrasebook() {
   const router = useRouter();
   const chapter = router.query.id;
 
@@ -50,13 +63,73 @@ export default function AboutItaly() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>France | Lublio</title>
+        <title>Phrasebook | Lublio</title>
       </Head>
       <Header />
       <div className="wrapper">
-        <h1>France</h1>
+        <h1>Phrasebook</h1>
         <Breadcrumbs />
-        <FrenchCities />
+
+        {chapter == "1" ? (
+          <>
+            <ItalianPhrasebook1 />
+          </>
+        ) : null}
+        {chapter == "2" ? (
+          <>
+            <ItalianPhrasebook2 />
+          </>
+        ) : null}
+        {chapter == "3" ? (
+          <>
+            <ItalianPhrasebook3 />
+          </>
+        ) : null}
+        {chapter == "4" ? (
+          <>
+            <ItalianPhrasebook4 />
+          </>
+        ) : null}
+        {chapter == "5" ? (
+          <>
+            <ItalianPhrasebook5 />
+          </>
+        ) : null}
+        {chapter == "6" ? (
+          <>
+            <ItalianPhrasebook6 />
+          </>
+        ) : null}
+        {chapter == "7" ? (
+          <>
+            <ItalianPhrasebook7 />
+          </>
+        ) : null}
+        {chapter == "8" ? (
+          <>
+            <ItalianPhrasebook8 />
+          </>
+        ) : null}
+        {chapter == "9" ? (
+          <>
+            <ItalianPhrasebook9 />
+          </>
+        ) : null}
+        {chapter == "10" ? (
+          <>
+            <ItalianPhrasebook10 />
+          </>
+        ) : null}
+        {chapter == "11" ? (
+          <>
+            <ItalianPhrasebook11 />
+          </>
+        ) : null}
+        {chapter == "12" ? (
+          <>
+            <ItalianPhrasebook12 />
+          </>
+        ) : null}
       </div>
     </>
   );

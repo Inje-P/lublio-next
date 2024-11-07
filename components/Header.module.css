@@ -110,6 +110,7 @@
     height: 60px;
     z-index: 99;
     padding: 0 30px;
+    border-bottom: 1px solid transparent;
     transition: all 0.4s;
   }
 
@@ -148,6 +149,7 @@
     height: 25px;
     top: 50%;
     left: 50%;
+    width: auto;
     transform: translate(-50%, -50%);
   }
 
@@ -164,6 +166,7 @@
   .sticky {
     height: 50px;
     background-color: var(--headerBackground);
+    border-bottom: 1px solid var(--stone400);
   }
 
   /*
@@ -185,7 +188,7 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50px;
-    border: 1px solid var(--stone700);
+    border: 1px solid var(--stone400);
     background-color: var(--headerBackground);
     font-family: "Inter", sans-serif;
     transition: all 0.5s ease 0s;
@@ -194,7 +197,7 @@
   .overlayActive {
     opacity: 1;
     right: 10px;
-    height: 300px;
+    height: 320px;
   }
 
   .close {

@@ -111,7 +111,7 @@
 
 .box .loader::before,
 .box .loader::after {
-  background-color: var(--violet400);
+  background-color: var(--emerald400);
 }
 
 .box .loader::before {

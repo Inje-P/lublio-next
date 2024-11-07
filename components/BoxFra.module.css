@@ -16,7 +16,7 @@
   outline: none;
   z-index: 0;
   text-decoration: none;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--stone400);
   background: transparent;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -111,7 +111,7 @@
 
 .box .loader::before,
 .box .loader::after {
-  background-color: var(--sky500);
+  background-color: var(--sky400);
 }
 
 .box .loader::before {

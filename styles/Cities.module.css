@@ -1,15 +1,97 @@
-.articleBox {
-    margin-bottom: 20px;
+.citiesWrapper {
+  margin-bottom: 20px;
 }
 
-.articleBox>p {
-    color: var(--zinc400);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 2;
-    margin-bottom: 20px;
+.ticketWrapper {
+  display: flex;
+  height: 300px;
+  margin-bottom: 20px;
 }
 
-.articleBox>p:last-child {
-    margin-bottom: 0px;
+.ticketSection1 {
+  position: relative;
+  width: calc(100% - 100px);
+  background-color: var(--stone200);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.ticketSection1 > h1 {
+  font-weight: 20px;
+}
+
+.ticketSection1 > h3 {
+  font-weight: 16px;
+}
+
+.ticketSection2 {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  background-color: var(--stone200);
+  border-left: 1px dashed var(--stone400);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ticketSection2:before,
+.ticketSection2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.ticketSection2:before {
+  background: var(--stone100);
+  top: -10px;
+  left: -10px;
+}
+
+.ticketSection2:after {
+  bottom: -10px;
+  left: -10px;
+  background: var(--stone100);
+}
+
+.ticketSection2 > h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  font-size: 60px;
+  font-family: "Libre Barcode 39", system-ui;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0px;
+  color: var(--stone600);
+}
+
+/* .citiesBottom {
+
+
+
+
+} */
+
+.citiesBottom > p {
+  color: var(--stone700);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.citiesBottom > p:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 688px) {
 }

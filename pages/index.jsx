@@ -65,7 +65,7 @@ export default function Home() {
                       "Embark on your language learning journey.",
                       "Lancez-vous dans l'apprentissage d'une langue.",
                       "Beginnen Sie Ihre Reise zum Sprachenlernen.",
-                      "Начните свое путешествие по изучению языка.",
+                      "Iniziate il vostro viaggio nell'apprendimento delle lingue.",
                     ],
                     autoStart: true,
                     loop: true,
@@ -88,8 +88,8 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/russian" className={styles.heroLink}>
-                    <p>RU</p>
+                  <Link href="/italian" className={styles.heroLink}>
+                    <p>IT</p>
                   </Link>
                 </li>
               </ul>
