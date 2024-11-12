@@ -58,13 +58,10 @@ export default function Russo() {
               Russian is a member of the East Slavic branch of the Indo-European
               language family, spoken by more than 100 million people in Russia
               and and neighboring countries, spoken by approximately 250 million
-              people. It uses the Cyrillic alphabet, is characterized by six
-              declensions and a systematic phase distinction for verbs. Official
-              of the United Nations language, and has an important place in
-              space-related terminology and science and technology.
-              space-related terminology and in science and technology. With a
-              rich literary tradition, it is the language of Tolstoy,
-              Dostoevsky, etc. Tolstoy, Dostoevsky, and others.
+              people. Official of the United Nations language, and has an
+              important place in space-related terminology and science and
+              technology. With a rich literary tradition, it is the language of
+              Tolstoy, Dostoevsky, etc. Tolstoy, Dostoevsky, and others.
             </p>
           </div>
           <div className={`${styles.menu} riseUp_4`}>
@@ -75,21 +72,9 @@ export default function Russo() {
               description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
             />
             <Box
-              path="/russo/a2"
-              title="A2"
-              subtitle="Elementary"
-              description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
-            />
-            <Box
-              path="/russo/b1"
-              title="B1"
-              subtitle="Intermediate"
-              description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
-            />
-            <Box
-              path="/russo/b2"
-              title="B2"
-              subtitle="Upper intermediate"
+              path="/russo/grammar"
+              title="Грамматика"
+              subtitle="Grammar"
               description="Лублио - это не только изучение языка, но и свобода уверенно познавать мир."
             />
             <Box

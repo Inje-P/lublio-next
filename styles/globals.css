@@ -119,6 +119,7 @@ p {
   font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   letter-spacing: 0px;
   line-height: 1.6;
+  margin-bottom: 0px;
 }
 
 /* Tablet */
@@ -193,8 +194,8 @@ p {
 
 .text-box {
   padding: 20px;
-  background-color: var(--zinc900);
-  border: 1px solid var(--zinc700);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -315,8 +316,8 @@ button {
   color: var(--zinc100);
   font-weight: 400;
   font-size: 14px;
-  background-color: var(--zinc950);
-  border: 1px solid var(--zinc700);
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -336,10 +337,13 @@ button::after {
   background-color: var(--zinc700);
   top: 0;
   left: 0;
-  opacity: 1;
+  opacity: 0;
 }
 
 @keyframes pulse {
+  from {
+    opacity: 1;
+  }
   to {
     transform: scaleY(1.5) scaleX(1.1);
     opacity: 0;
@@ -347,7 +351,7 @@ button::after {
 }
 
 button:hover {
-  background-color: var(--zinc900);
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
 
@@ -367,18 +371,6 @@ button:focus::after {
 
 .buttons > button:last-child {
   margin-bottom: 5px;
-}
-
-/* Mobile */
-@media (max-width: 688px) {
-  .buttons {
-    flex-direction: column;
-  }
-
-  .buttons > button {
-    width: calc(100% - 20px);
-    max-width: none;
-  }
 }
 
 /*

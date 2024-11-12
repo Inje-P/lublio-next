@@ -19,7 +19,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -59,7 +60,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -113,7 +115,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -181,7 +184,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -263,7 +267,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -359,7 +364,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -469,7 +475,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",
@@ -593,7 +600,8 @@ const TableFull = (props) => {
                     <div className={styles.column} key={key}>
                       <p
                         style={{
-                          background: "var(--zinc800)",
+                          backgroundColor: "rgba(255, 255, 255, 0.1)",
+                          border: "1px solid rgba(255, 255, 255, 0.3)",
                           color: "var(--zinc200)",
                           fontWeight: 500,
                           cursor: "default",

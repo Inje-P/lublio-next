@@ -57,13 +57,11 @@ export default function Franco() {
             <p className="riseUp_3">
               French is a language of the Romance branch of the Indo-European
               language family and is an official language in 29 countries around
-              the world, including France. It evolved from Latin and is
-              characterized by complex verb conjugation and gender agreement. It
-              is one of the official languages of the United Nations and has
-              traditionally been recognized as the language of diplomacy and the
-              arts. It captures the essence of French culture, has a refined
-              pronunciation, rich vocabulary, and sophisticated grammar, and is
-              highly influential internationally.
+              the world, including France. It is one of the official languages
+              of the United Nations and has traditionally been recognized as the
+              language of diplomacy and the arts. It captures the essence of
+              French culture, has a refined pronunciation, rich vocabulary, and
+              sophisticated grammar, and is highly influential internationally.
             </p>
           </div>
           <div className={`${styles.menu} riseUp_4`}>
@@ -74,20 +72,8 @@ export default function Franco() {
               description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
             />
             <Box
-              path="/franco/a2"
-              title="A2"
-              subtitle="Elementary"
-              description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-            />
-            <Box
-              path="/franco/b1"
-              title="B1"
-              subtitle="Intermediate"
-              description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
-            />
-            <Box
-              path="/franco/b2"
-              title="B2"
+              path="/franco/grammar"
+              title="Grammaire"
               subtitle="Upper intermediate"
               description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
             />
