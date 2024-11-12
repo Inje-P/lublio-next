@@ -129,15 +129,15 @@ export default function RussianPhrasebook() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="fade_1">Разговорник</h1>
-            <h2 className="fade_2">Phrasebook</h2>
+            <h1 className="riseUp_1">Разговорник</h1>
+            <h2 className="riseUp_2">Phrasebook</h2>
             <Breadcrumbs />
           </div>
           <StyledSectionRus
             icon="record_voice_over"
             description="Access essential phrases for various scenarios. From everyday interactions to travel emergencies, this section equips you with practical expressions for effective communication."
           />
-          <div className={`${styles.menu} fade_4`}>
+          <div className={`${styles.menu} riseUp_4`}>
             {chapters.map((chapter) => (
               <Box
                 key={chapter.id}

@@ -129,7 +129,7 @@ export default function FrenchPhrasebook() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="fade_1">Guide de conversation</h1>
+            <h1 className="riseUp_1">Guide de conversation</h1>
             <h2 className="fade_2">Phrasebook</h2>
             <Breadcrumbs />
           </div>
@@ -141,7 +141,7 @@ export default function FrenchPhrasebook() {
             {chapters.map((chapter) => (
               <Box
                 key={chapter.id}
-                path={"/french/phrasebook/" + chapter.id}
+                path={"/franco/phrasebook/" + chapter.id}
                 title={chapter.title}
                 subtitle=""
                 description={chapter.description}

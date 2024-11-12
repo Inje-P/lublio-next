@@ -2,8 +2,9 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionRus from "@/components/StyledSectionRus";
-import BoxRus from "@/components/BoxRus";
+import Box from "@/components/Box";
 import { useEffect } from "react";
+import styles from "@/styles/Russo.module.css";
 
 export default function AboutRussia() {
   const chapters = [
@@ -190,27 +191,32 @@ export default function AboutRussia() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>Russia | Lublio</title>
+        <title>Lublio</title>
       </Head>
       <Header />
-      <div className="wrapper">
-        <h1>Russia</h1>
-        <Breadcrumbs />
-
-        <StyledSectionRus
-          icon="globe"
-          description="Discover Russia's vibrant culture, history, and language through interactive lessons designed to enhance your learning experience."
-        />
-
-        {chapters.map((chapter) => (
-          <BoxRus
-            key={chapter.index}
-            path={"/russian/russia/" + chapter.index}
-            title={chapter.city}
-            subtitle={chapter.region}
-            description={chapter.introduction}
+      <div className={styles.bgDark}>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>
+            <h1 className="riseUp_1">Российская Федерация</h1>
+            <h2 className="riseUp_2">About Russia</h2>
+            <Breadcrumbs />
+          </div>
+          <StyledSectionRus
+            icon="globe"
+            description="Discover Russia's vibrant culture, history, and language through interactive lessons designed to enhance your learning experience."
           />
-        ))}
+          <div className={`${styles.menu} riseUp_3`}>
+            {chapters.map((chapter) => (
+              <Box
+                key={chapter.index}
+                path={"/russo/russia/" + chapter.index}
+                title={chapter.city}
+                subtitle={chapter.region}
+                description={chapter.introduction}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

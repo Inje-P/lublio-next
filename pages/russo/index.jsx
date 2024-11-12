@@ -52,9 +52,9 @@ export default function Russo() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="fade_1">#Russo</h1>
-            <h2 className="fade_2">Русский язык</h2>
-            <p className="fade_3">
+            <h1 className="riseUp_1">#Russo</h1>
+            <h2 className="riseUp_2">Русский язык</h2>
+            <p className="riseUp_3">
               Russian is a member of the East Slavic branch of the Indo-European
               language family, spoken by more than 100 million people in Russia
               and and neighboring countries, spoken by approximately 250 million
@@ -67,7 +67,7 @@ export default function Russo() {
               Dostoevsky, etc. Tolstoy, Dostoevsky, and others.
             </p>
           </div>
-          <div className={`${styles.menu} fade_4`}>
+          <div className={`${styles.menu} riseUp_4`}>
             <Box
               path="/russo/a1"
               title="A1"

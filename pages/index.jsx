@@ -63,7 +63,7 @@ export default function Home() {
         <div className={styles.main}>
           <h1 className="fade_1">Embark On Your Journey</h1>
           <div className={`${styles.mainButtons} fade_2`}>
-            <Button path="/choose" title="Start" />
+            <Button path="/explore" title="Start" />
           </div>
         </div>
       </div>

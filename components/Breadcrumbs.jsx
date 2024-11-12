@@ -24,7 +24,7 @@ const Breadcrumbs = () => {
   }, []);
 
   return (
-    <div style={{ marginBottom: "30px" }}>
+    <div>
       <ul className={styles.breadcrumbs}>
         {path1 != null ? (
           <>

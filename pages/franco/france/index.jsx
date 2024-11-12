@@ -2,8 +2,9 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StyledSectionFra from "@/components/StyledSectionFra";
-import BoxFra from "@/components/BoxFra";
+import Box from "@/components/Box";
 import { useEffect } from "react";
+import styles from "@/styles/Franco.module.css";
 
 export default function AboutFrance() {
   const chapters = [
@@ -190,27 +191,32 @@ export default function AboutFrance() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>France | Lublio</title>
+        <title>Lublio</title>
       </Head>
       <Header />
-      <div className="wrapper">
-        <h1>France</h1>
-        <Breadcrumbs />
-
-        <StyledSectionFra
-          icon="globe"
-          description="Immerse yourself in France's rich culture, history, and language through engaging lessons and interactive activities."
-        />
-
-        {chapters.map((chapter) => (
-          <BoxFra
-            key={chapter.index}
-            path={"/french/france/" + chapter.index}
-            title={chapter.city}
-            subtitle={chapter.region}
-            description={chapter.introduction}
+      <div className={styles.bgDark}>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>
+            <h1 className="riseUp_1">République Française</h1>
+            <h2 className="riseUp_2">About France</h2>
+            <Breadcrumbs />
+          </div>
+          <StyledSectionFra
+            icon="globe"
+            description="Immerse yourself in France's rich culture, history, and language through engaging lessons and interactive activities."
           />
-        ))}
+          <div className={`${styles.menu} riseUp_3`}>
+            {chapters.map((chapter) => (
+              <Box
+                key={chapter.index}
+                path={"/franco/france/" + chapter.index}
+                title={chapter.city}
+                subtitle={chapter.region}
+                description={chapter.introduction}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

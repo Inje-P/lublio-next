@@ -4,8 +4,8 @@
   background: linear-gradient(
     -45deg,
     var(--black),
-    var(--blue800),
-    var(--teal600)
+    var(--sky950),
+    var(--sky600)
   );
   background-size: 300% 300%;
   animation: gradient 6s ease infinite;

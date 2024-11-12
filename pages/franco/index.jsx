@@ -52,9 +52,9 @@ export default function Franco() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="fade_1">#Franco</h1>
-            <h2 className="fade_2">Français</h2>
-            <p className="fade_3">
+            <h1 className="riseUp_1">#Franco</h1>
+            <h2 className="riseUp_2">Français</h2>
+            <p className="riseUp_3">
               French is a language of the Romance branch of the Indo-European
               language family and is an official language in 29 countries around
               the world, including France. It evolved from Latin and is
@@ -66,7 +66,7 @@ export default function Franco() {
               highly influential internationally.
             </p>
           </div>
-          <div className={`${styles.menu} fade_4`}>
+          <div className={`${styles.menu} riseUp_4`}>
             <Box
               path="/franco/a1"
               title="A1"

@@ -83,7 +83,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/choose" className={styles.menuLink}>
+              <Link href="/explore" className={styles.menuLink}>
                 <span className="material-symbols-outlined">public</span>
               </Link>
             </li>
