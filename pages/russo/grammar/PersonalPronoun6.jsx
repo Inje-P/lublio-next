@@ -15,9 +15,9 @@ export default function PersonalPronoun6() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["(обо) мне", "(о) нас"],
-          "2nd person": ["(о) тебе", "(о) вас"],
-          "3rd person": ["(о) нём / (о) ней", "(о) них"],
+          "1st": ["(обо) мне", "(о) нас"],
+          "2nd": ["(о) тебе", "(о) вас"],
+          "3rd": ["(о) нём / (о) ней", "(о) них"],
         }}
       />
 
@@ -26,9 +26,9 @@ export default function PersonalPronoun6() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["обо мне", "о нас"],
-          "2nd person": ["о тебе", "о вас"],
-          "3rd person": ["о нём / о ней", "о них"],
+          "1st": ["обо мне", "о нас"],
+          "2nd": ["о тебе", "о вас"],
+          "3rd": ["о нём / о ней", "о них"],
         }}
       />
 

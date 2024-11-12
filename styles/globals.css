@@ -373,6 +373,14 @@ button:focus::after {
   margin-bottom: 5px;
 }
 
+/* Mobile */
+@media (max-width: 688px) {
+  .buttons {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+
 /*
 * ──────────────────────────────
 * STYLED-LIST

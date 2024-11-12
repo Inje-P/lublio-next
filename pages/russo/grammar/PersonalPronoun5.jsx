@@ -15,9 +15,9 @@ export default function PersonalPronoun5() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["мной", "нами"],
-          "2nd person": ["тобой", "вами"],
-          "3rd person": ["им / ею", "ими"],
+          "1st": ["мной", "нами"],
+          "2nd": ["тобой", "вами"],
+          "3rd": ["им / ею", "ими"],
         }}
       />
 
@@ -26,9 +26,9 @@ export default function PersonalPronoun5() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["со мной", "с нами"],
-          "2nd person": ["с тобой", "с вами"],
-          "3rd person": ["с ним / с нею", "с ними"],
+          "1st": ["со мной", "с нами"],
+          "2nd": ["с тобой", "с вами"],
+          "3rd": ["с ним / с нею", "с ними"],
         }}
       />
 

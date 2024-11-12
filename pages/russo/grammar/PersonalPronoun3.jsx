@@ -15,9 +15,9 @@ export default function PersonalPronoun3() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["мне", "нам"],
-          "2nd person": ["тебе", "вам"],
-          "3rd person": ["ему / ей", "им"],
+          "1st": ["мне", "нам"],
+          "2nd": ["тебе", "вам"],
+          "3rd": ["ему / ей", "им"],
         }}
       />
 
@@ -26,9 +26,9 @@ export default function PersonalPronoun3() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["ко мне", "к нам"],
-          "2nd person": ["к тебе", "к вам"],
-          "3rd person": ["к нему / к ней", "к ним"],
+          "1st": ["ко мне", "к нам"],
+          "2nd": ["к тебе", "к вам"],
+          "3rd": ["к нему / к ней", "к ним"],
         }}
       />
 

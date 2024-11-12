@@ -15,9 +15,9 @@ export default function PersonalPronoun2() {
         numberOfRows="3"
         columns={["Singulier", "Pluriel"]}
         data={{
-          "1st person": ["moi", "nous"],
-          "2nd person": ["toi", "vous"],
-          "3rd person": ["lui / elle", "eux / elles"],
+          "1st": ["moi", "nous"],
+          "2nd": ["toi", "vous"],
+          "3rd": ["lui / elle", "eux / elles"],
         }}
       />
 

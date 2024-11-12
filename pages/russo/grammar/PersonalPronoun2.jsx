@@ -15,9 +15,9 @@ export default function PersonalPronoun2() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["меня", "нас"],
-          "2nd person": ["тебя", "вас"],
-          "3rd person": ["его / её", "их"],
+          "1st": ["меня", "нас"],
+          "2nd": ["тебя", "вас"],
+          "3rd": ["его / её", "их"],
         }}
       />
 
@@ -26,9 +26,9 @@ export default function PersonalPronoun2() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["у меня", "у нас"],
-          "2nd person": ["у тебя", "у вас"],
-          "3rd person": ["у него / у неё", "у них"],
+          "1st": ["у меня", "у нас"],
+          "2nd": ["у тебя", "у вас"],
+          "3rd": ["у него / у неё", "у них"],
         }}
       />
 

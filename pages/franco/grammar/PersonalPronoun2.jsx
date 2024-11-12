@@ -15,9 +15,9 @@ export default function PersonalPronoun3() {
         numberOfRows="3"
         columns={["Singulier", "Pluriel"]}
         data={{
-          "1st person": ["me (m')", "nous"],
-          "2nd person": ["te (t')", "vous"],
-          "3rd person": ["le / la (l')", "les"],
+          "1st": ["me (m')", "nous"],
+          "2nd": ["te (t')", "vous"],
+          "3rd": ["le / la (l')", "les"],
         }}
       />
 

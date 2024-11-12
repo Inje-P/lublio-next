@@ -15,9 +15,9 @@ export default function PersonalPronoun1() {
         numberOfRows="3"
         columns={["Singular", "Plural"]}
         data={{
-          "1st person": ["я", "мы"],
-          "2nd person": ["ты", "вы"],
-          "3rd person": ["он / она / оно", "они"],
+          "1st": ["я", "мы"],
+          "2nd": ["ты", "вы"],
+          "3rd": ["он / она / оно", "они"],
         }}
       />
 
