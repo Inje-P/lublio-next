@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--stone100);
+  background-color: var(--zinc950);
 }
 
 * {
@@ -31,6 +31,11 @@ a:active {
   border-radius: 0px;
 }
 
+hr {
+  display: block;
+  border: 1px solid var(--zinc700);
+}
+
 /*
  * ──────────────────────────────
  * WRAPPER
@@ -41,14 +46,16 @@ a:active {
   width: 100%;
   height: auto;
   padding: 30px;
+  padding-top: 80px;
 }
 
-.wrapperNarrow {
+.wrapperArticle {
   width: 100%;
-  max-width: 992px;
-  margin: 0 auto;
+  max-width: 932px; /* 992px + 60px (paddings) */
   height: auto;
   padding: 30px;
+  padding-top: 80px;
+  margin: 0 auto;
 }
 
 /* Tablet */
@@ -61,9 +68,8 @@ a:active {
     padding-top: 80px;
   }
 
-  .wrapperNarrow {
+  .wrapperArticle {
     width: 100%;
-    max-width: 688px;
     height: auto;
     padding: 20px;
     margin: 0 auto;
@@ -85,9 +91,9 @@ p {
   width: 100%;
   height: auto;
   font-size: 70px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 500;
-  color: var(--stone700);
+  color: var(--zinc100);
   margin-bottom: 20px;
 }
 
@@ -95,8 +101,8 @@ h1::selection,
 h2::selection,
 h3::selection,
 p::selection {
-  color: var(--stone100);
-  background-color: var(--stone700);
+  color: var(--zinc600);
+  background-color: var(--zinc100);
 }
 
 h2 {
@@ -109,22 +115,10 @@ h3 {
 
 p {
   font-size: 20px;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   letter-spacing: 0px;
   line-height: 1.6;
-}
-
-.phrase-eng,
-.phrase-fra,
-.phrase-deu,
-.phrase-spa,
-.phrase-ita,
-.phrase-rus,
-.phrase-tur {
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
 }
 
 /* Tablet */
@@ -199,14 +193,15 @@ p {
 
 .text-box {
   padding: 20px;
-  background-color: var(--stone200);
+  background-color: var(--zinc900);
+  border: 1px solid var(--zinc700);
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .text-box > p {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   padding: 10px 0px;
   margin-bottom: 0px;
 }
@@ -238,9 +233,9 @@ p {
 select {
   padding: 10px 15px;
   width: 100%;
-  color: var(--stone700);
+  color: var(--zinc700);
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 400;
   outline: none;
   -o-appearance: none;
@@ -248,14 +243,10 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
   border-radius: 30px;
-  background-image: linear-gradient(
-      45deg,
-      transparent 50%,
-      var(--stone700) 50%
-    ),
-    linear-gradient(135deg, var(--stone700) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, transparent 50%, var(--zinc700) 50%),
+    linear-gradient(135deg, var(--zinc700) 50%, transparent 50%);
   background-position: calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
@@ -263,13 +254,9 @@ select {
 }
 
 select:focus {
-  border: 1px solid var(--stone700);
-  background-image: linear-gradient(
-      45deg,
-      var(--stone700) 50%,
-      transparent 50%
-    ),
-    linear-gradient(135deg, transparent 50%, var(--stone700) 50%);
+  border: 1px solid var(--zinc700);
+  background-image: linear-gradient(45deg, var(--zinc700) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, var(--zinc700) 50%);
   background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
     calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
@@ -278,9 +265,9 @@ select:focus {
 }
 
 select > option {
-  color: var(--stone700);
+  color: var(--zinc700);
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 500;
 }
 
@@ -319,17 +306,17 @@ select > option:hover {
 
 button {
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   width: 100%;
   max-width: 300px;
   letter-spacing: 0px;
   margin: 10px;
   padding: 10px 20px;
-  color: var(--stone800);
-  font-weight: 600;
+  color: var(--zinc100);
+  font-weight: 400;
   font-size: 14px;
-  background-color: var(--stone100);
-  border: 1px solid var(--stone400);
+  background-color: var(--zinc950);
+  border: 1px solid var(--zinc700);
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -346,7 +333,7 @@ button::after {
   width: 100%;
   height: 100%;
   border-radius: 50px;
-  background-color: var(--stone300);
+  background-color: var(--zinc700);
   top: 0;
   left: 0;
   opacity: 1;
@@ -360,12 +347,38 @@ button::after {
 }
 
 button:hover {
-  background-color: var(--stone200);
+  background-color: var(--zinc900);
   cursor: pointer;
 }
 
 button:focus::after {
   animation: pulse 0.4s ease-out;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.buttons > button {
+  margin: 5px;
+}
+
+.buttons > button:last-child {
+  margin-bottom: 5px;
+}
+
+/* Mobile */
+@media (max-width: 688px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons > button {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
 }
 
 /*
@@ -375,10 +388,10 @@ button:focus::after {
 */
 
 .styled-list {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-size: 20px;
-  font-weight: 400;
-  color: var(--stone700);
+  font-weight: 300;
+  color: var(--zinc100);
   letter-spacing: 0px;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -412,10 +425,10 @@ button:focus::after {
 
 .styled-list-with-flags p {
   display: inline;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-size: 20px;
-  font-weight: 400;
-  color: var(--stone700);
+  font-weight: 300;
+  color: var(--zinc100);
   letter-spacing: 0px;
   line-height: 1.6;
 }
@@ -458,7 +471,7 @@ button:focus::after {
     z-index: 0;
     margin: 20px 0px;
     border-radius: 0px;
-    border-bottom: 2px solid var(--stone700);
+    border-bottom: 2px solid var(--zinc700);
     background-color: transparent;
     transition: all 0.3s;
   }
@@ -475,12 +488,12 @@ button:focus::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: -1px;
     margin-bottom: 0px;
-    color: var(--stone700);
+    color: var(--zinc700);
     background-color: transparent;
     transition: all 0.4s;
   }
@@ -488,7 +501,7 @@ button:focus::after {
   .callout-container:hover > h2 {
     cursor: default;
     letter-spacing: 1px;
-    color: var(--stone700);
+    color: var(--zinc700);
   }
 
   /*
@@ -552,7 +565,7 @@ button:focus::after {
     width: calc(100% - 40px);
     margin-bottom: 0px;
     text-align: left;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0px;
@@ -927,13 +940,13 @@ button:focus::after {
   .styled-quote-cyan-right .text-original {
     display: block;
     width: 100%;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0px;
     line-height: 1.2;
     margin-bottom: 10px;
-    color: var(--stone700);
+    color: var(--zinc700);
   }
 
   .styled-quote-pink-left .text-original:last-child,
@@ -976,13 +989,13 @@ button:focus::after {
   .styled-quote-cyan-left .text-translated,
   .styled-quote-cyan-right .text-translated {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0px;
     line-height: 1.4;
     margin-bottom: 0px;
-    color: var(--stone700);
+    color: var(--zinc700);
   }
 
   /*
@@ -1020,29 +1033,29 @@ button:focus::after {
     padding: 20px 15px;
     margin-bottom: 20px;
     border: none;
-    border-bottom: 2px solid var(--stone700);
-    font-family: "Inter", sans-serif;
+    border-bottom: 2px solid var(--zinc700);
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: var(--stone700);
+    color: var(--zinc700);
     outline: none;
     background-color: transparent;
     transition: all 0.3s;
   }
 
   form > ul > li > input::placeholder {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 16px;
   }
 
   form > ul > li > input:focus {
-    border-bottom: 2px solid var(--stone700);
+    border-bottom: 2px solid var(--zinc700);
   }
 
   form > ul > li > button {
     position: relative;
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     width: 50%;
     letter-spacing: 0px;
     margin: 0 auto;
@@ -1051,24 +1064,24 @@ button:focus::after {
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
-    color: var(--stone50);
-    background-color: var(--stone700);
-    border: 2px solid var(--stone700);
+    color: var(--zinc50);
+    background-color: var(--zinc700);
+    border: 2px solid var(--zinc700);
     border-radius: 50px;
     transition: all 0.4s;
   }
 
   form > ul > li > button:hover {
     letter-spacing: 3px;
-    color: var(--stone700);
+    color: var(--zinc700);
     background-color: transparent;
     cursor: pointer;
   }
 
   form > ul > li > button:after {
     letter-spacing: 0px;
-    color: var(--stone50);
-    background-color: var(--stone700);
+    color: var(--zinc50);
+    background-color: var(--zinc700);
     cursor: default;
   }
 
@@ -1083,13 +1096,13 @@ button:focus::after {
     background-color: transparent;
     font-size: 20px;
     margin: 0px;
-    color: var(--stone700);
+    color: var(--zinc700);
     font-weight: 500;
     transition: all 0.3s;
   }
 
   i:hover {
-    color: var(--stone700);
+    color: var(--zinc700);
     cursor: pointer;
   }
 
@@ -1101,18 +1114,18 @@ button:focus::after {
 
   .styled-table {
     width: 100%;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0px;
-    color: var(--stone700);
+    color: var(--zinc700);
     margin-bottom: 20px;
-    background-color: var(--stone200);
-    /* border: 1px solid var(--stone700); */
+    background-color: var(--zinc100);
+    /* border: 1px solid var(--zinc700); */
   }
 
   .styled-table thead {
-    background-color: var(--stone700);
+    background-color: var(--zinc700);
     border-radius: 20px;
   }
 
@@ -1123,10 +1136,10 @@ button:focus::after {
   }
 
   .styled-table th {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
     font-size: 17px;
     font-weight: 500;
-    color: var(--stone100);
+    color: var(--zinc100);
   }
 
   .styled-table th:last-child,
@@ -1159,7 +1172,7 @@ button:focus::after {
     background-color: var(--white);
     margin: 20px;
     padding: 20px;
-    border: 1px solid var(--stone700);
+    border: 1px solid var(--zinc700);
     border-radius: 15px;
     width: calc(100% - 40px);
     font-weight: bolder;

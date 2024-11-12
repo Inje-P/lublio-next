@@ -4,18 +4,19 @@
  * ──────────────────────────────
  */
 
-.tableVertical {
+ .tableVertical {
   display: table;
   table-layout: fixed;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid var(--stone400);
+  border: 1px solid var(--zinc700);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .row {
@@ -29,13 +30,13 @@
 }
 
 .rowHeader > p {
-  background: var(--stone500);
-  color: var(--stone100);
-  font-weight: 400;
+  background: var(--zinc800);
+  color: var(--zinc200);
+  font-weight: 500;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .column {
@@ -46,42 +47,59 @@
 }
 
 .column > p {
-  color: var(--stone700);
+  color: var(--zinc200);
   border: 1px solid transparent;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
+  padding-left: 20px;
   border-radius: 10px;
   margin-bottom: 0px;
   transition: 0.3s all;
 }
 
-.column:hover {
-  cursor: pointer;
-}
-
 .column:hover > p {
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
 }
 
 /* Tablet */
 @media (max-width: 992px) {
   .rowHeader > p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .column > p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 /* Mobile */
 @media (max-width: 688px) {
+  .tableVertical {
+    border: none;
+    padding: 0px;
+  }
+
+  .rowHeader {
+    padding: 10px 0px;
+  }
+
   .rowHeader > p {
     font-size: 14px;
   }
 
+  .column {
+    text-align: center;
+    padding: 0px;
+  }
+
   .column > p {
     font-size: 14px;
+    padding: 10px 0px;
+  }
+
+  .column:hover > p {
+    border: 1px solid transparent;
+    background-color: var(--zinc900);
   }
 }

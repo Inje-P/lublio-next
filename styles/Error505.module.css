@@ -1,3 +1,30 @@
+.bg {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    var(--black),
+    var(--zinc900),
+    var(--zinc700)
+  );
+  background-size: 300% 300%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
@@ -6,7 +33,7 @@
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
   transform: translate(-50%, -50%);
 }
 

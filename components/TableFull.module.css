@@ -1,0 +1,107 @@
+/*
+ * ──────────────────────────────
+ * TABLE
+ * ──────────────────────────────
+ */
+
+.tableFull {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid var(--zinc700);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.row {
+  display: table-row;
+}
+
+.rowHeader {
+  display: table-cell;
+  text-align: center;
+  padding: 10px;
+}
+
+.rowHeader > p {
+  background: var(--zinc800);
+  color: var(--zinc200);
+  border: 1px solid transparent;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  transition: 0.3s all;
+}
+
+.column {
+  display: table-cell;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.column > p {
+  color: var(--zinc200);
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  transition: 0.3s all;
+}
+
+.rowHeader:hover > p,
+.column:hover > p {
+  border: 1px solid var(--zinc700);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .rowHeader > p {
+    font-size: 16px;
+  }
+
+  .column > p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 688px) {
+  .tableFull {
+    border: none;
+    padding: 0px;
+  }
+
+  .rowHeader {
+    padding: 10px 0px;
+  }
+
+  .rowHeader > p {
+    font-size: 14px;
+  }
+
+  .column {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .column > p {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+
+  .column:hover > p {
+    border: 1px solid transparent;
+    background-color: var(--zinc900);
+  }
+}

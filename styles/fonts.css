@@ -1,17 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Noto Sans KR", sans-serif; */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* font-family: "Inter", sans-serif; */
 
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
 /* font-family: "Vazirmatn", sans-serif; */
-
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-/* font-family: "Prata", serif; */
-
-@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
-/* font-family: "Literata", serif; */
-
-@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
-/* font-family: "Libre Bodoni", serif; */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 /* font-family: "Roboto Slab", serif; */
@@ -25,10 +19,3 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100..900&family=Noto+Serif+Armenian:wght@100..900&display=swap");
 /* font-family: "Noto Serif Armenian", serif; */
 /* font-family: "Noto Sans Armenian", sans-serif; */
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-/* font-family: "Oswald", sans-serif; */
-
-/* BARCODE FONT */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-/* font-family: "Libre Barcode 39", system-ui; */

@@ -4,16 +4,16 @@
  * ──────────────────────────────
  */
 
-.tableHorizontal {
+ .tableHorizontal {
   display: table;
   table-layout: fixed;
   width: 100%;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
+  font-weight: 400;
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid var(--stone400);
+  border: 1px solid var(--zinc700);
   border-radius: 10px;
 }
 
@@ -26,13 +26,13 @@
 
 .columnHeader {
   text-align: center;
-  background: var(--stone500);
+  background: var(--zinc800);
   border-radius: 10px;
 }
 
 .columnHeader > p {
-  color: var(--stone100);
-  font-weight: 400;
+  color: var(--zinc200);
+  font-weight: 500;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -46,16 +46,15 @@
 }
 
 .row > p {
-  color: var(--stone700);
+  color: var(--zinc200);
   font-size: 20px;
   font-weight: 400;
   margin: 10px 0;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .row:hover {
-  cursor: pointer;
-  border: 1px solid var(--stone700);
+  border: 1px solid var(--zinc700);
 }
 
 /* Tablet */
@@ -71,16 +70,31 @@
 
 /* Mobile */
 @media (max-width: 688px) {
+  .tableHorizontal {
+    border: none;
+  }
+
   .column {
-    padding: 10px;
+    padding: 0px 5px;
   }
 
   .columnHeader > p {
     font-size: 14px;
   }
 
+  .row {
+    text-align: center;
+    margin: 0px;
+  }
+
   .row > p {
     font-size: 14px;
-    padding-left: 5px;
+    margin: 15px 0px;
+    padding: 0px;
+  }
+
+  .row:hover {
+    border: 1px solid transparent;
+    background-color: var(--zinc900);
   }
 }

@@ -31,30 +31,25 @@ const Header = () => {
         }
       >
         <div className={styles.logo}>
-          <Link href="/" className={styles.mainMenuLink}>
+          <Link href="/">
             <h1>LVBLIO</h1>
           </Link>
         </div>
         <div className={styles.mainMenu}>
           <ul>
             <li>
+              <Link href="/explore" className={styles.mainMenuLink}>
+                Explore
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className={styles.mainMenuLink}>
+                Blog
+              </Link>
+            </li>
+            <li>
               <Link href="/" className={styles.mainMenuLink}>
                 About
-              </Link>
-            </li>
-            <li>
-              <Link href="/french" className={styles.mainMenuLink}>
-                French
-              </Link>
-            </li>
-            <li>
-              <Link href="/german" className={styles.mainMenuLink}>
-                German
-              </Link>
-            </li>
-            <li>
-              <Link href="/russian" className={styles.mainMenuLink}>
-                Russian
               </Link>
             </li>
           </ul>
@@ -88,18 +83,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/french" className={styles.menuLink}>
-                <span className="material-symbols-outlined">airwave</span>
+              <Link href="/choose" className={styles.menuLink}>
+                <span className="material-symbols-outlined">public</span>
               </Link>
             </li>
             <li>
-              <Link href="/german" className={styles.menuLink}>
-                <span className="material-symbols-outlined">cloud</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/russian" className={styles.menuLink}>
-                <span className="material-symbols-outlined">ac_unit</span>
+              <Link href="/" className={styles.menuLink}>
+                <span className="material-symbols-outlined">library_books</span>
               </Link>
             </li>
             <li>
