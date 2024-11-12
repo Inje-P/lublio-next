@@ -1,6 +1,7 @@
 .bg {
   position: relative;
   height: auto;
+  min-height: 100vh;
   background: linear-gradient(
     -45deg,
     var(--black),
@@ -14,11 +15,12 @@
 .bgDark {
   position: relative;
   height: auto;
+  min-height: 100vh;
   background: linear-gradient(
     -45deg,
     var(--black),
     var(--zinc950),
-    var(--violet950)
+    var(--violet900)
   );
   background-size: 300% 300%;
   animation: gradient 6s ease infinite;
