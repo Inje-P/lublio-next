@@ -1,9 +1,19 @@
-import Link from "next/link";
 import Head from "next/head";
-import styles from "@/styles/Explore.module.css";
 import Header from "@/components/Header";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import RussianCities from "./RussianCities";
+import styles from "@/styles/Russian.module.css";
 
-export default function Explore() {
+export default function AboutRussia() {
+  const router = useRouter();
+  const chapter = router.query.id;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Head>
@@ -44,39 +54,15 @@ export default function Explore() {
         <title>Lublio</title>
       </Head>
       <Header />
-      <div className={styles.exploreWrapper}>
-        <div className={styles.stars}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className={styles.main}>
-          <h1 className="fade_1">Choose your language</h1>
-          <Link href="/french" className="fade_2">
-            <div className={styles.btnFrench}>
-              <h2 className={styles.btnFrenchTitle}>Français</h2>
-            </div>
-          </Link>
-          <Link href="/german" className="fade_3">
-            <div className={styles.btnGerman}>
-              <h2 className={styles.btnGermanTitle}>Deutsch</h2>
-            </div>
-          </Link>
-          <Link href="/russian" className="fade_4">
-            <div className={styles.btnRussian}>
-              <h2 className={styles.btnRussianTitle}>Русский</h2>
-            </div>
-          </Link>
+      <div className={styles.bgDark}>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>
+            <h1>Russia</h1>
+            <Breadcrumbs />
+          </div>
+          <div className={styles.contents}>
+            <RussianCities />
+          </div>
         </div>
       </div>
     </>

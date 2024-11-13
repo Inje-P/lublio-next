@@ -204,7 +204,7 @@
 
 .btnFrench,
 .btnGerman,
-.btnItalian {
+.btnRussian {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -231,7 +231,7 @@
   animation-delay: 0.3s;
 }
 
-.btnItalian {
+.btnRussian {
   bottom: 20%;
   left: 30%;
   animation: float1 6s linear infinite;
@@ -278,7 +278,7 @@
 
 .btnFrench:hover,
 .btnGerman:hover,
-.btnItalian:hover {
+.btnRussian:hover {
   cursor: pointer;
   width: 300px;
   height: 300px;
@@ -288,7 +288,7 @@
 
 .btnFrenchTitle,
 .btnGermanTitle,
-.btnItalianTitle {
+.btnRussianTitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,7 +306,7 @@
 
 .btnFrench:hover .btnFrenchTitle,
 .btnGerman:hover .btnGermanTitle,
-.btnItalian:hover .btnItalianTitle {
+.btnRussian:hover .btnRussianTitle {
   letter-spacing: 5px;
 }
 
@@ -322,7 +322,7 @@
     right: 15%;
   }
 
-  .btnItalian {
+  .btnRussian {
     bottom: 20%;
     left: 20%;
   }
@@ -332,7 +332,7 @@
 @media (max-width: 688px) {
   .btnFrench,
   .btnGerman,
-  .btnItalian {
+  .btnRussian {
     width: 180px;
     height: 180px;
   }
@@ -347,14 +347,14 @@
     right: 15%;
   }
 
-  .btnItalian {
+  .btnRussian {
     bottom: 20%;
     left: 20%;
   }
 
   .btnFrench:hover,
   .btnGerman:hover,
-  .btnItalian:hover {
+  .btnRussian:hover {
     width: 230px;
     height: 230px;
   }
