@@ -11,30 +11,10 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(
-    -45deg,
-    var(--zinc900),
-    var(--sky950),
-    var(--zinc900),
-    var(--violet950),
-    var(--zinc900)
-  );
-  background-size: 500% 500%;
-  animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: transparent;
+  background: url("../public/images/explore.jpg");
+  background-position-x: center;
+  background-size: cover;
 }
 
 .stars > span {
@@ -201,8 +181,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
+  z-index: 0;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
@@ -221,30 +202,40 @@
 
 /* BUTTONS */
 
-.btnFranco,
-.btnRusso {
+.btnFrench,
+.btnGerman,
+.btnItalian {
   position: absolute;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  z-index: 0;
+  z-index: 1;
   text-decoration: none;
+  text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btnFranco {
+.btnFrench {
   top: 20%;
   left: 30%;
   animation: float1 6s linear infinite;
-  animation-delay: 0.2s;
 }
 
-.btnRusso {
-  bottom: 20%;
+.btnGerman {
+  bottom: 40%;
   right: 30%;
   animation: float2 6s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.btnItalian {
+  bottom: 20%;
+  left: 30%;
+  animation: float1 6s linear infinite;
+  animation-delay: 0.7s;
 }
 
 @keyframes float1 {
@@ -285,16 +276,19 @@
   }
 }
 
-.btnFranco:hover,
-.btnRusso:hover {
+.btnFrench:hover,
+.btnGerman:hover,
+.btnItalian:hover {
   cursor: pointer;
   width: 300px;
   height: 300px;
   background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
 }
 
-.btnFrancoTitle,
-.btnRussoTitle {
+.btnFrenchTitle,
+.btnGermanTitle,
+.btnItalianTitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -310,44 +304,57 @@
   transition: all 0.4s;
 }
 
-.btnFranco:hover .btnFrancoTitle,
-.btnRusso:hover .btnRussoTitle {
+.btnFrench:hover .btnFrenchTitle,
+.btnGerman:hover .btnGermanTitle,
+.btnItalian:hover .btnItalianTitle {
   letter-spacing: 5px;
 }
 
 /* Mobile & Tablet */
 @media (max-width: 992px) {
-  .btnFranco {
+  .btnFrench {
     top: 20%;
     left: 20%;
   }
 
-  .btnRusso {
+  .btnGerman {
+    bottom: 40%;
+    right: 15%;
+  }
+
+  .btnItalian {
     bottom: 20%;
-    right: 20%;
+    left: 20%;
   }
 }
 
 /* Mobile */
 @media (max-width: 688px) {
-  .btnFranco,
-  .btnRusso {
+  .btnFrench,
+  .btnGerman,
+  .btnItalian {
     width: 180px;
     height: 180px;
   }
 
-  .btnFranco {
+  .btnFrench {
     top: 15%;
     left: 15%;
   }
 
-  .btnRusso {
-    bottom: 15%;
+  .btnGerman {
+    top: 35%;
     right: 15%;
   }
 
-  .btnFranco:hover,
-  .btnRusso:hover {
+  .btnItalian {
+    bottom: 20%;
+    left: 20%;
+  }
+
+  .btnFrench:hover,
+  .btnGerman:hover,
+  .btnItalian:hover {
     width: 230px;
     height: 230px;
   }

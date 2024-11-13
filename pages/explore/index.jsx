@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "@/styles/Explore.module.css";
 import Header from "@/components/Header";
 
-export default function Choose() {
+export default function Explore() {
   return (
     <>
       <Head>
@@ -61,15 +61,20 @@ export default function Choose() {
           <span></span>
         </div>
         <div className={styles.main}>
-          <h1 className="fade_1">Choose your universe</h1>
-          <Link href="/franco" className="fade_2">
-            <div className={styles.btnFranco}>
-              <h2 className={styles.btnFrancoTitle}>#FRANCO</h2>
+          <h1 className="fade_1">Choose your language</h1>
+          <Link href="/french" className="fade_2">
+            <div className={styles.btnFrench}>
+              <h2 className={styles.btnFrenchTitle}>Français</h2>
             </div>
           </Link>
-          <Link href="/russo" className="fade_3">
-            <div className={styles.btnRusso}>
-              <h2 className={styles.btnRussoTitle}>#RUSSO</h2>
+          <Link href="/german" className="fade_3">
+            <div className={styles.btnGerman}>
+              <h2 className={styles.btnGermanTitle}>Deutsch</h2>
+            </div>
+          </Link>
+          <Link href="/italian" className="fade_4">
+            <div className={styles.btnItalian}>
+              <h2 className={styles.btnItalianTitle}>Italiano</h2>
             </div>
           </Link>
         </div>
