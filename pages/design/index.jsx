@@ -5,12 +5,13 @@ import TableHorizontal from "@/components/TableHorizontal";
 import TableVertical from "@/components/TableVertical";
 import Header from "@/components/Header";
 import BBSList from "@/components/BBSList";
+import Box2 from "@/components/Box2";
 
 // Example
 import data from "@/assets/json/post/post_ex.json";
 
 export default function DesignPage() {
-  const [section, setSection] = useState(1);
+  const [section, setSection] = useState(2);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -189,6 +190,11 @@ export default function DesignPage() {
       {section == 2 ? (
         <div className="wrapper" style={{ marginTop: "0px" }}>
           <h1>Section 2</h1>
+          <Box2
+            path="/russian/a1"
+            title="Personalpronomen in der Nominativform"
+            subtitle="Beginner"
+          />
           <h2>BBS List</h2>
           <BBSList props={data} />
         </div>

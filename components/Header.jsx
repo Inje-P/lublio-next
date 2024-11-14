@@ -54,9 +54,11 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <span id={styles.profile} className="material-symbols-outlined">
-          account_circle
-        </span>
+        <Link href="/auth">
+          <span id={styles.profile} className="material-symbols-outlined">
+            account_circle
+          </span>
+        </Link>
         <span
           id={styles.menu}
           className="material-symbols-outlined"

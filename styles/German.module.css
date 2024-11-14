@@ -65,7 +65,6 @@
 .title > h2 {
   display: block;
   width: calc(100% - 60px);
-  font-size: 28px;
   font-weight: 500;
   font-family: "Inter", "Vazirmatn", sans-serif;
 }

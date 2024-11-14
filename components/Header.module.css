@@ -25,7 +25,6 @@
 #profile {
   display: flex;
   justify-content: flex-end;
-  width: 100px;
 }
 
 #menu {

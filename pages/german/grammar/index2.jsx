@@ -1,43 +1,21 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import TableFull from "@/components/TableFull";
+import TableVertical from "@/components/TableVertical";
+import TableHorizontal from "@/components/TableHorizontal";
 import Header from "@/components/Header";
-import Box2 from "@/components/Box2";
 import styles from "@/styles/German.module.css";
 
+import PersonalPronoun1 from "./PersonalPronoun1";
+import PersonalPronoun2 from "./PersonalPronoun2";
+import PersonalPronoun3 from "./PersonalPronoun3";
+import PersonalPronoun4 from "./PersonalPronoun4";
+
 export default function GermanGrammar() {
-  const [part, setPart] = useState(1);
-  const part1 = [
-    {
-      index: 1,
-      title: "Bestimmter Artikel",
-      subtitle: "Definite article",
-    },
-    {
-      index: 2,
-      title: "Unbestimmter Artikel",
-      subtitle: "Indefinite article",
-    },
-    {
-      index: 3,
-      title: "Demonstrativartikel",
-      subtitle: "Demonstrative article",
-    },
-    {
-      index: 4,
-      title: "Interrogativartikel",
-      subtitle: "Interrogative article",
-    },
-    {
-      index: 5,
-      title: "Negativer Artikel",
-      subtitle: "Negative article",
-    },
-    {
-      index: 6,
-      title: "Possesivartikel",
-      subtitle: "Possessive article",
-    },
-  ];
+  const [section, setSection] = useState(1);
+  const [example1, setExample1] = useState(1);
+  const [example2, setExample2] = useState(1);
+  const [example3, setExample3] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,37 +64,42 @@ export default function GermanGrammar() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Deutsche Grammatik</h1>
-            <h2 className="riseUp_2">German Grammar</h2>
+            <h1 className="riseUp_1">Personalpronomen</h1>
+            <h2 className="riseUp_2">Personal pronouns</h2>
           </div>
           <div className={styles.contents}>
             <div className="buttons">
-              <button onClick={() => setPart(1)}>Part 1</button>
-              <button onClick={() => setPart(2)}>Part 2</button>
+              <button onClick={() => setSection(1)}>Nom.</button>
+              <button onClick={() => setSection(2)}>Gen.</button>
+              <button onClick={() => setSection(3)}>Dat.</button>
+              <button onClick={() => setSection(4)}>Akk.</button>
+              <button onClick={() => setSection(5)}>✨</button>
             </div>
 
-            {part == 1 ? (
+            {section == 1 ? <PersonalPronoun1 /> : null}
+            {section == 2 ? <PersonalPronoun2 /> : null}
+            {section == 3 ? <PersonalPronoun3 /> : null}
+            {section == 4 ? <PersonalPronoun4 /> : null}
+            {section == 5 ? (
               <>
-                <h3>Part 1</h3>
-                {part1.map((chapter) => (
-                  <Box2
-                    title={chapter.title}
-                    subtitle={chapter.subtitle}
-                    path={"/german/grammar/artikel/" + chapter.index}
-                  />
-                ))}
-              </>
-            ) : null}
-            {part == 2 ? (
-              <>
-                <h3>Part 2</h3>
-                {part1.map((chapter) => (
-                  <Box2
-                    title={chapter.title}
-                    subtitle={chapter.subtitle}
-                    path={"/german/grammar/artikel/" + chapter.index}
-                  />
-                ))}
+                <TableVertical
+                  numberOfRows="4"
+                  data={{
+                    "Nom.": ["ich", "du", "er/es", "sie"],
+                    "Gen.": ["meiner", "deiner", "seiner", "ihrer"],
+                    "Dat.": ["mir", "dir", "ihm", "ihr"],
+                    "Akk.": ["mich", "dich", "ihn/es", "sie"],
+                  }}
+                />
+                <TableVertical
+                  numberOfRows="4"
+                  data={{
+                    "Nom.": ["wir", "ihr", "sie", "Sie"],
+                    "Gen.": ["unser", "euer", "ihrer", "Ihrer"],
+                    "Dat.": ["uns", "euch", "ihnen", "Ihnen"],
+                    "Akk.": ["uns", "euch", "sie", "Sie"],
+                  }}
+                />
               </>
             ) : null}
           </div>
