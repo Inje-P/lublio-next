@@ -52,8 +52,8 @@ export default function French() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Français</h1>
-            <h2 className="riseUp_2">French</h2>
+            <h1 className="riseUp_1">Franco</h1>
+            <h2 className="riseUp_2">Francophone</h2>
             <p className="riseUp_3">
               French is a language of the Romance branch of the Indo-European
               language family and is an official language in 29 countries around
@@ -66,9 +66,9 @@ export default function French() {
           </div>
           <div className={`${styles.menu} riseUp_4`}>
             <Box
-              path="/french/a1"
-              title="A1"
-              subtitle="Beginner"
+              path="/french/bootcamp"
+              title="Bootcamp"
+              subtitle="Training"
               description="Lublio, ce n'est pas seulement l'apprentissage d'une langue, c'est aussi la liberté d'explorer le monde en toute confiance."
             />
             <Box

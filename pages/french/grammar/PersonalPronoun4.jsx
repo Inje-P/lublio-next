@@ -11,13 +11,25 @@ export default function PersonalPronoun2() {
   return (
     <>
       <h3>Les pronoms toniques sujets</h3>
-      <TableFull
-        numberOfRows="3"
-        columns={["Singulier", "Pluriel"]}
+      <TableHorizontal
+        numberOfColumns="2"
         data={{
-          "1st": ["moi", "nous"],
-          "2nd": ["toi", "vous"],
-          "3rd": ["lui / elle", "eux / elles"],
+          "Pronom sujet": [
+            "je",
+            "tu",
+            "il / elle",
+            "nous",
+            "vous",
+            "ils / elles",
+          ],
+          "Pronom tonique": [
+            "moi",
+            "toi",
+            "lui / elle",
+            "nous",
+            "vous",
+            "eux / elles",
+          ],
         }}
       />
 

@@ -11,13 +11,11 @@ export default function PersonalPronoun1() {
   return (
     <>
       <h3>Les pronoms sujets</h3>
-      <TableFull
-        numberOfRows="3"
-        columns={["Singulier", "Pluriel"]}
+      <TableHorizontal
+        numberOfColumns="2"
         data={{
-          "1st": ["je", "nous"],
-          "2nd": ["tu", "vous"],
-          "3rd": ["il / elle / on", "ils / elles"],
+          Singulier: ["je", "tu", "il", "elle", "on"],
+          Pluriel: ["nous", "vous", "ils", "elles"],
         }}
       />
 

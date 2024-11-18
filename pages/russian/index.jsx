@@ -52,8 +52,8 @@ export default function Russian() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Русский</h1>
-            <h2 className="riseUp_2">Russian</h2>
+            <h1 className="riseUp_1">Russo</h1>
+            <h2 className="riseUp_2">Russophone</h2>
             <p className="riseUp_3">
               Russian is a member of the East Slavic branch of the Indo-European
               language family, spoken by approximately 250 million people in
@@ -66,9 +66,9 @@ export default function Russian() {
           </div>
           <div className={`${styles.menu} riseUp_4`}>
             <Box
-              path="/russian/a1"
-              title="A1"
-              subtitle="Beginner"
+              path="/russian/bootcamp"
+              title="Bootcamp"
+              subtitle="Training"
               description="Люблио - это не только изучение языка, но и свобода, позволяющая уверенно исследовать мир."
             />
             <Box

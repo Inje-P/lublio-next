@@ -64,7 +64,7 @@ export default function GermanPhrasebook() {
           href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
         />
 
-        <title>Phrasebook | Lublio</title>
+        <title>Lublio</title>
       </Head>
       <Header />
       <div className={styles.bgDark}>

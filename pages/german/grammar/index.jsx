@@ -38,6 +38,230 @@ export default function GermanGrammar() {
       subtitle: "Possessive article",
     },
   ];
+  const part2 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part3 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part4 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part5 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part6 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part7 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part8 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -91,30 +315,113 @@ export default function GermanGrammar() {
           </div>
           <div className={styles.contents}>
             <div className="buttons">
-              <button onClick={() => setPart(1)}>Part 1</button>
-              <button onClick={() => setPart(2)}>Part 2</button>
+              <button onClick={() => setPart(1)}>Nouns & Articles</button>
+              <button onClick={() => setPart(2)}>Pronouns</button>
+              <button onClick={() => setPart(3)}>Adjectives & Adverbs</button>
+              <button onClick={() => setPart(4)}>Prepositions</button>
+            </div>
+            <div className="buttons">
+              {/* Verbs : Aspects, Voices, Participles, Gerunds, Infinitives */}
+              <button onClick={() => setPart(5)}>Verbs</button>
+              <button onClick={() => setPart(6)}>Tenses</button>
+              <button onClick={() => setPart(7)}>Moods</button>
+              <button onClick={() => setPart(8)}>Syntax</button>
             </div>
 
             {part == 1 ? (
               <>
-                <h3>Part 1</h3>
+                <h3>Nouns & Articles</h3>
                 {part1.map((chapter) => (
                   <Box2
                     title={chapter.title}
                     subtitle={chapter.subtitle}
-                    path={"/german/grammar/artikel/" + chapter.index}
+                    path={"/german/grammar/nouns-and-articles/" + chapter.index}
                   />
                 ))}
               </>
             ) : null}
             {part == 2 ? (
               <>
-                <h3>Part 2</h3>
-                {part1.map((chapter) => (
+                <h3>Pronouns</h3>
+                {part2.map((chapter) => (
                   <Box2
                     title={chapter.title}
                     subtitle={chapter.subtitle}
-                    path={"/german/grammar/artikel/" + chapter.index}
+                    path={"/german/grammar/pronouns/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 3 ? (
+              <>
+                <h3>Adjectives & Adverbs</h3>
+                {part3.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={
+                      "/german/grammar/adjectives-and-adverbs/" + chapter.index
+                    }
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 4 ? (
+              <>
+                <h3>Prepositions</h3>
+                {part4.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/german/grammar/prepositions/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 5 ? (
+              <>
+                <h3>Verbs</h3>
+                {part5.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/german/grammar/verbs/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 6 ? (
+              <>
+                <h3>Tenses</h3>
+                {part6.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/german/grammar/tenses/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 7 ? (
+              <>
+                <h3>Moods</h3>
+                {part7.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/german/grammar/moods/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 8 ? (
+              <>
+                <h3>Syntax</h3>
+                {part8.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/german/grammar/syntax/" + chapter.index}
                   />
                 ))}
               </>

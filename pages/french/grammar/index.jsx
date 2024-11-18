@@ -1,21 +1,267 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import TableFull from "@/components/TableFull";
-import TableVertical from "@/components/TableVertical";
-import TableHorizontal from "@/components/TableHorizontal";
 import Header from "@/components/Header";
+import Box2 from "@/components/Box2";
 import styles from "@/styles/French.module.css";
 
-import PersonalPronoun1 from "./PersonalPronoun1";
-import PersonalPronoun2 from "./PersonalPronoun2";
-import PersonalPronoun3 from "./PersonalPronoun3";
-import PersonalPronoun4 from "./PersonalPronoun4";
-
 export default function FrenchGrammar() {
-  const [section, setSection] = useState(1);
-  const [example1, setExample1] = useState(1);
-  const [example2, setExample2] = useState(1);
-  const [example3, setExample3] = useState(1);
+  const [part, setPart] = useState(1);
+  const part1 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part2 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part3 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part4 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part5 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part6 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part7 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+  const part8 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,54 +310,120 @@ export default function FrenchGrammar() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Les pronoms personnels</h1>
-            <h2 className="riseUp_2">Personal pronouns</h2>
+            <h1 className="riseUp_1">Grammaire française</h1>
+            <h2 className="riseUp_2">French Grammar</h2>
           </div>
           <div className={styles.contents}>
             <div className="buttons">
-              <button onClick={() => setSection(1)}>Pronoms sujets</button>
-              <button onClick={() => setSection(2)}>COD</button>
-              <button onClick={() => setSection(3)}>COI</button>
-              <button onClick={() => setSection(4)}>Pronoms toniques</button>
-              <button onClick={() => setSection(5)}>✨</button>
+              <button onClick={() => setPart(1)}>Nouns & Articles</button>
+              <button onClick={() => setPart(2)}>Pronouns</button>
+              <button onClick={() => setPart(3)}>Adjectives & Adverbs</button>
+              <button onClick={() => setPart(4)}>Prepositions</button>
+            </div>
+            <div className="buttons">
+              {/* Verbs : Aspects, Voices, Participles, Gerunds, Infinitives */}
+              <button onClick={() => setPart(5)}>Verbs</button>
+              <button onClick={() => setPart(6)}>Tenses</button>
+              <button onClick={() => setPart(7)}>Moods</button>
+              <button onClick={() => setPart(8)}>Syntax</button>
             </div>
 
-            {section == 1 ? <PersonalPronoun1 /> : null}
-            {section == 2 ? <PersonalPronoun2 /> : null}
-            {section == 3 ? <PersonalPronoun3 /> : null}
-            {section == 4 ? <PersonalPronoun4 /> : null}
-            {section == 5 ? (
+            {part == 1 ? (
               <>
-                <TableHorizontal
-                  numberOfColumns="4"
-                  data={{
-                    Sujet: [
-                      "je",
-                      "tu",
-                      "il / elle",
-                      "nous",
-                      "vous",
-                      "ils / elles",
-                    ],
-                    COD: [
-                      "me (m')",
-                      "te (t')",
-                      "le / la (l')",
-                      "nous",
-                      "vous",
-                      "les",
-                    ],
-                    COI: ["me (m')", "te (t')", "lui", "nous", "vous", "leur"],
-                    Tonique: [
-                      "moi",
-                      "toi",
-                      "lui / elle",
-                      "nous",
-                      "vous",
-                      "eux / elles",
-                    ],
-                  }}
-                />
+                <h3>Nouns & Articles</h3>
+                {part1.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/nouns-and-articles/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 2 ? (
+              <>
+                <h3>Pronouns</h3>
+                {part2.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/pronouns/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 3 ? (
+              <>
+                <h3>Adjectives & Adverbs</h3>
+                {part3.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={
+                      "/french/grammar/adjectives-and-adverbs/" + chapter.index
+                    }
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 4 ? (
+              <>
+                <h3>Prepositions</h3>
+                {part4.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/prepositions/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 5 ? (
+              <>
+                <h3>Verbs</h3>
+                {part5.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/verbs/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 6 ? (
+              <>
+                <h3>Tenses</h3>
+                {part6.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/tenses/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 7 ? (
+              <>
+                <h3>Moods</h3>
+                {part7.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/moods/" + chapter.index}
+                  />
+                ))}
+              </>
+            ) : null}
+            {part == 8 ? (
+              <>
+                <h3>Syntax</h3>
+                {part8.map((chapter) => (
+                  <Box2
+                    title={chapter.title}
+                    subtitle={chapter.subtitle}
+                    path={"/french/grammar/syntax/" + chapter.index}
+                  />
+                ))}
               </>
             ) : null}
           </div>

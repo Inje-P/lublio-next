@@ -67,9 +67,9 @@ export default function German() {
           </div>
           <div className={`${styles.menu} riseUp_4`}>
             <Box
-              path="/german/a1"
-              title="A1"
-              subtitle="Beginner"
+              path="/german/bootcamp"
+              title="Bootcamp"
+              subtitle="Training"
               description="Bei Lublio geht es nicht nur um das Erlernen einer Sprache, sondern auch um die Freiheit, die Welt mit Selbstvertrauen zu erkunden."
             />
             <Box

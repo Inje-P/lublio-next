@@ -8,12 +8,13 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs > li {
   margin-right: 10px;
   font-size: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--zinc100);
@@ -26,7 +27,7 @@
 .breadcrumbs > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0px;

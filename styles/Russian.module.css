@@ -50,23 +50,29 @@
 .title {
   display: block;
   width: 100%;
-  padding: 30px;
   padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .title > h1 {
   display: block;
   width: calc(100% - 60px);
-  font-weight: 500;
-  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .title > h2 {
   display: block;
   width: calc(100% - 60px);
-  font-weight: 500;
-  font-family: "Inter", "Vazirmatn", sans-serif;
+  font-weight: 400;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
+}
+
+.title > p {
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -90,6 +96,6 @@
 .contents {
   display: block;
   width: 100%;
-  padding: 30px;
-  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

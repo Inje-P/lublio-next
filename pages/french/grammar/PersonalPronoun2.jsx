@@ -11,13 +11,18 @@ export default function PersonalPronoun3() {
   return (
     <>
       <h3>Les pronoms compléments d'objet direct</h3>
-      <TableFull
-        numberOfRows="3"
-        columns={["Singulier", "Pluriel"]}
+      <TableHorizontal
+        numberOfColumns="2"
         data={{
-          "1st": ["me (m')", "nous"],
-          "2nd": ["te (t')", "vous"],
-          "3rd": ["le / la (l')", "les"],
+          "Pronom sujet": [
+            "je",
+            "tu",
+            "il / elle",
+            "nous",
+            "vous",
+            "ils / elles",
+          ],
+          COD: ["me (m')", "te (t')", "le / la (l')", "nous", "vous", "les"],
         }}
       />
 

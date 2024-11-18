@@ -60,8 +60,21 @@ export default function Explore() {
           <span></span>
           <span></span>
         </div>
+        <div className={styles.ripple}>
+          <div className={styles.rippleBox}>
+            <span style={{ animationDelay: "calc(0.2s * 1)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 2)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 3)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 4)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 5)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 6)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 7)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 8)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 9)" }}></span>
+            <span style={{ animationDelay: "calc(0.2s * 10)" }}></span>
+          </div>
+        </div>
         <div className={styles.main}>
-          <h1 className="fade_1">Choose your language</h1>
           <Link href="/french" className="fade_2">
             <div className={styles.btnFrench}>
               <h2 className={styles.btnFrenchTitle}>Français</h2>

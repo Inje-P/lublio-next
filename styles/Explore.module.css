@@ -11,10 +11,23 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background-color: transparent;
   background: url("../public/images/explore.jpg");
   background-position-x: center;
   background-size: cover;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .stars > span {
@@ -164,78 +177,148 @@
   animation-duration: 2s;
 }
 
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.rippleBox {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  background-color: transparent;
+}
+
+.rippleBox span {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: ripple 4s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .rippleBox {
+    width: 400px;
+    height: 400px;
+  }
+
+  @keyframes ripple {
+    0% {
+      width: 0px;
+      height: 0px;
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      width: 400px;
+      height: 400px;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .ripple {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .main {
   display: block;
   width: 100%;
   height: 100vh;
   margin-top: 0px;
-  padding: 30px;
-}
-
-.main > h1 {
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: calc(100% - 60px);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 0px;
-  font-size: 18px;
-  font-weight: 500;
-  z-index: 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-family: "Inter", "Noto Sans KR", "Vazirmatn", sans-serif;
+  padding: 80px;
 }
 
 /* Mobile */
 @media (max-width: 688px) {
-  .main > h1 {
-    font-size: 18px;
-    top: 50%;
-    left: 50%;
-    letter-spacing: 3px;
-    transform: translate(-50%, -50%);
+  .main {
+    padding: 50px;
   }
 }
-
-/* BUTTONS */
 
 .btnFrench,
 .btnGerman,
 .btnRussian {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 33%;
   z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(0px);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btnFrench {
-  top: 20%;
-  left: 30%;
-  animation: float1 6s linear infinite;
+.btnFrench:hover,
+.btnGerman:hover,
+.btnRussian:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
 }
 
-.btnGerman {
-  bottom: 40%;
-  right: 30%;
-  animation: float2 6s linear infinite;
-  animation-delay: 0.3s;
+.btnFrenchTitle,
+.btnGermanTitle,
+.btnRussianTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0px;
+  color: var(--zinc100);
+  transition: all 0.4s;
 }
 
-.btnRussian {
-  bottom: 20%;
-  left: 30%;
-  animation: float1 6s linear infinite;
-  animation-delay: 0.7s;
+.btnFrench:hover .btnFrenchTitle,
+.btnGerman:hover .btnGermanTitle,
+.btnRussian:hover .btnRussianTitle {
+  font-size: 24px;
+  letter-spacing: 20px;
+  text-indent: 20px;
 }
 
 @keyframes float1 {
@@ -273,89 +356,5 @@
 
   75% {
     transform: translate(10px, -10px);
-  }
-}
-
-.btnFrench:hover,
-.btnGerman:hover,
-.btnRussian:hover {
-  cursor: pointer;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
-}
-
-.btnFrenchTitle,
-.btnGermanTitle,
-.btnRussianTitle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  color: var(--zinc100);
-  transition: all 0.4s;
-}
-
-.btnFrench:hover .btnFrenchTitle,
-.btnGerman:hover .btnGermanTitle,
-.btnRussian:hover .btnRussianTitle {
-  letter-spacing: 5px;
-}
-
-/* Mobile & Tablet */
-@media (max-width: 992px) {
-  .btnFrench {
-    top: 20%;
-    left: 20%;
-  }
-
-  .btnGerman {
-    bottom: 40%;
-    right: 15%;
-  }
-
-  .btnRussian {
-    bottom: 20%;
-    left: 20%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 688px) {
-  .btnFrench,
-  .btnGerman,
-  .btnRussian {
-    width: 180px;
-    height: 180px;
-  }
-
-  .btnFrench {
-    top: 15%;
-    left: 15%;
-  }
-
-  .btnGerman {
-    top: 35%;
-    right: 15%;
-  }
-
-  .btnRussian {
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .btnFrench:hover,
-  .btnGerman:hover,
-  .btnRussian:hover {
-    width: 230px;
-    height: 230px;
   }
 }
