@@ -200,14 +200,14 @@
   .main > h1 {
     font-size: 18px;
     letter-spacing: 10px;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .mainButtons {
     flex-direction: column;
-    top: 70%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
