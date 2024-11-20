@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
+import { CubeRus } from "@/components/Cube";
 import styles from "@/styles/Russian.module.css";
 
 export default function Russian() {
@@ -52,19 +53,24 @@ export default function Russian() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Russo</h1>
-            <h2 className="riseUp_2">Russophone</h2>
-            <p className="riseUp_3">
-              Russian is a member of the East Slavic branch of the Indo-European
-              language family, spoken by approximately 250 million people in
-              Russia and neighboring countries. It is an official language of
-              the United Nations and plays an important role in space-related
-              terminology and science and technology. It has a rich literary
-              tradition and is the working language of world-renowned authors
-              such as Tolstoy and Dostoevsky.
-            </p>
+            <div className={styles.titleLeft}>
+              <h1 className="riseUp_1">Russo</h1>
+              <h3 className="riseUp_2">Russophone Community</h3>
+              <p className="riseUp_3">
+                Russian is a member of the East Slavic branch of the
+                Indo-European language family, spoken by approximately 250
+                million people in Russia and neighboring countries. It is an
+                official language of the United Nations and plays an important
+                role in space-related terminology and science and technology. It
+                has a rich literary tradition and is the working language of
+                world-renowned authors such as Tolstoy and Dostoevsky.
+              </p>
+            </div>
+            <div className={`${styles.titleRight} riseUp_4`}>
+              <CubeRus />
+            </div>
           </div>
-          <div className={`${styles.menu} riseUp_4`}>
+          <div className={`${styles.menu} riseUp_5`}>
             <Box
               path="/russian/bootcamp"
               title="Bootcamp"

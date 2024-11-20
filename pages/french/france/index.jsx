@@ -197,15 +197,17 @@ export default function AboutFrance() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">République Française</h1>
-            <h2 className="riseUp_2">About France</h2>
-            <Breadcrumbs />
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">République Française</h1>
+              <h3 className="riseUp_2">About France</h3>
+              <p className="riseUp_3">
+                Immerse yourself in France's rich culture, history, and language
+                through engaging lessons and interactive activities.
+              </p>
+            </div>
           </div>
-          <StyledSectionFra
-            icon="globe"
-            description="Immerse yourself in France's rich culture, history, and language through engaging lessons and interactive activities."
-          />
-          <div className={`${styles.menu} riseUp_3`}>
+          <Breadcrumbs />
+          <div className={`${styles.menu} riseUp_4`}>
             {chapters.map((chapter) => (
               <Box
                 key={chapter.index}

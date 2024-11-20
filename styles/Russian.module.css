@@ -43,16 +43,32 @@
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 992px;
   margin: 0 auto;
 }
 
 .title {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  padding: 30px;
   padding-top: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
+}
+
+.titleLeft {
+  width: 60%;
+}
+
+.titleRight {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleFull {
+  width: 100%;
 }
 
 .title > h1 {
@@ -65,6 +81,13 @@
 }
 
 .title > h2 {
+  display: block;
+  width: calc(100% - 60px);
+  font-weight: 400;
+  font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
+}
+
+.title > h3 {
   display: block;
   width: calc(100% - 60px);
   font-weight: 400;

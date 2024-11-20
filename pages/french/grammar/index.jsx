@@ -310,8 +310,10 @@ export default function FrenchGrammar() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Grammaire française</h1>
-            <h2 className="riseUp_2">French Grammar</h2>
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Grammaire française</h1>
+              <h3 className="riseUp_2">French Grammar</h3>
+            </div>
           </div>
           <div className={styles.contents}>
             <div className="buttons">
@@ -330,7 +332,7 @@ export default function FrenchGrammar() {
 
             {part == 1 ? (
               <>
-                <h3>Nouns & Articles</h3>
+                <h2>Nouns & Articles</h2>
                 {part1.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -342,7 +344,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 2 ? (
               <>
-                <h3>Pronouns</h3>
+                <h2>Pronouns</h2>
                 {part2.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -354,7 +356,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 3 ? (
               <>
-                <h3>Adjectives & Adverbs</h3>
+                <h2>Adjectives & Adverbs</h2>
                 {part3.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -368,7 +370,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 4 ? (
               <>
-                <h3>Prepositions</h3>
+                <h2>Prepositions</h2>
                 {part4.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -380,7 +382,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 5 ? (
               <>
-                <h3>Verbs</h3>
+                <h2>Verbs</h2>
                 {part5.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -392,7 +394,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 6 ? (
               <>
-                <h3>Tenses</h3>
+                <h2>Tenses</h2>
                 {part6.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -404,7 +406,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 7 ? (
               <>
-                <h3>Moods</h3>
+                <h2>Moods</h2>
                 {part7.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -416,7 +418,7 @@ export default function FrenchGrammar() {
             ) : null}
             {part == 8 ? (
               <>
-                <h3>Syntax</h3>
+                <h2>Syntax</h2>
                 {part8.map((chapter) => (
                   <Box2
                     title={chapter.title}

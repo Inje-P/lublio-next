@@ -9,33 +9,38 @@ export default function RussianGrammar() {
   const part1 = [
     {
       index: 1,
-      title: "Bestimmter Artikel",
-      subtitle: "Definite article",
+      title: "Род имён существительных",
+      subtitle: "Gender of nouns",
     },
     {
       index: 2,
-      title: "Unbestimmter Artikel",
-      subtitle: "Indefinite article",
+      title: "Существительные на -Ь",
+      subtitle: "Nouns in -Ь",
     },
     {
       index: 3,
-      title: "Demonstrativartikel",
-      subtitle: "Demonstrative article",
+      title: "Родительный падеж (№ 2)",
+      subtitle: "Genitive case",
     },
     {
       index: 4,
-      title: "Interrogativartikel",
-      subtitle: "Interrogative article",
+      title: "Дательный падеж (№ 3)",
+      subtitle: "Dative case",
     },
     {
       index: 5,
-      title: "Negativer Artikel",
-      subtitle: "Negative article",
+      title: "Винительный падеж (№ 4)",
+      subtitle: "Accusative case",
     },
     {
       index: 6,
-      title: "Possesivartikel",
-      subtitle: "Possessive article",
+      title: "Творительный падеж (№ 5)",
+      subtitle: "Instrumental case",
+    },
+    {
+      index: 7,
+      title: "Предложный падеж (№ 6)",
+      subtitle: "Prepositional case",
     },
   ];
   const part2 = [
@@ -310,8 +315,10 @@ export default function RussianGrammar() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Русская грамматика</h1>
-            <h2 className="riseUp_2">Russian Grammar</h2>
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Русская грамматика</h1>
+              <h3 className="riseUp_2">Russian Grammar</h3>
+            </div>
           </div>
           <div className={styles.contents}>
             <div className="buttons">
@@ -330,7 +337,7 @@ export default function RussianGrammar() {
 
             {part == 1 ? (
               <>
-                <h3>Nouns & Articles</h3>
+                <h2>Nouns & Articles</h2>
                 {part1.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -344,7 +351,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 2 ? (
               <>
-                <h3>Pronouns</h3>
+                <h2>Pronouns</h2>
                 {part2.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -356,7 +363,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 3 ? (
               <>
-                <h3>Adjectives & Adverbs</h3>
+                <h2>Adjectives & Adverbs</h2>
                 {part3.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -370,7 +377,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 4 ? (
               <>
-                <h3>Prepositions</h3>
+                <h2>Prepositions</h2>
                 {part4.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -382,7 +389,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 5 ? (
               <>
-                <h3>Verbs</h3>
+                <h2>Verbs</h2>
                 {part5.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -394,7 +401,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 6 ? (
               <>
-                <h3>Tenses</h3>
+                <h2>Tenses</h2>
                 {part6.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -406,7 +413,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 7 ? (
               <>
-                <h3>Moods</h3>
+                <h2>Moods</h2>
                 {part7.map((chapter) => (
                   <Box2
                     title={chapter.title}
@@ -418,7 +425,7 @@ export default function RussianGrammar() {
             ) : null}
             {part == 8 ? (
               <>
-                <h3>Syntax</h3>
+                <h2>Syntax</h2>
                 {part8.map((chapter) => (
                   <Box2
                     title={chapter.title}

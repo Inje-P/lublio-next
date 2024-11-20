@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
+import { CubeFra } from "@/components/Cube";
 import styles from "@/styles/French.module.css";
 
 export default function French() {
@@ -52,19 +53,25 @@ export default function French() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Franco</h1>
-            <h2 className="riseUp_2">Francophone</h2>
-            <p className="riseUp_3">
-              French is a language of the Romance branch of the Indo-European
-              language family and is an official language in 29 countries around
-              the world, including France. It is one of the official languages
-              of the United Nations and has traditionally been recognized as the
-              language of diplomacy and the arts. It captures the essence of
-              French culture, has a refined pronunciation, rich vocabulary, and
-              sophisticated grammar, and is highly influential internationally.
-            </p>
+            <div className={styles.titleLeft}>
+              <h1 className="riseUp_1">Franco</h1>
+              <h3 className="riseUp_2">Francophone Community</h3>
+              <p className="riseUp_3">
+                French is a language of the Romance branch of the Indo-European
+                language family and is an official language in 29 countries
+                around the world, including France. It is one of the official
+                languages of the United Nations and has traditionally been
+                recognized as the language of diplomacy and the arts. It
+                captures the essence of French culture, has a refined
+                pronunciation, rich vocabulary, and sophisticated grammar, and
+                is highly influential internationally.
+              </p>
+            </div>
+            <div className={`${styles.titleRight} riseUp_4`}>
+              <CubeFra />
+            </div>
           </div>
-          <div className={`${styles.menu} riseUp_4`}>
+          <div className={`${styles.menu} riseUp_5`}>
             <Box
               path="/french/bootcamp"
               title="Bootcamp"

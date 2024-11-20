@@ -1,0 +1,105 @@
+.cubeFra,
+.cubeRus {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+.cubeFra > div,
+.cubeRus > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cubeFra > div > span,
+.cubeRus > div > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cubeFra > div > span {
+  background: linear-gradient(var(--blue950), var(--sky400));
+}
+
+.cubeRus > div > span {
+  background: linear-gradient(var(--purple950), var(--violet400));
+}
+
+.cubeFra > div > span:nth-child(1),
+.cubeRus > div > span:nth-child(1) {
+  transform: rotateY(calc(90deg * 0)) translateZ(75px);
+}
+
+.cubeFra > div > span:nth-child(2),
+.cubeRus > div > span:nth-child(2) {
+  transform: rotateY(calc(90deg * 1)) translateZ(75px);
+}
+
+.cubeFra > div > span:nth-child(3),
+.cubeRus > div > span:nth-child(3) {
+  transform: rotateY(calc(90deg * 2)) translateZ(75px);
+}
+
+.cubeFra > div > span:nth-child(4),
+.cubeRus > div > span:nth-child(4) {
+  transform: rotateY(calc(90deg * 3)) translateZ(75px);
+}
+
+.topFra,
+.topRus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+.topFra {
+  background-color: var(--blue950);
+}
+
+.topRus {
+  background-color: var(--purple950);
+}
+
+.topFra::before,
+.topRus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transform: translateZ(-200px);
+  filter: blur(20px);
+}
+
+.topFra::before {
+  background-color: var(--sky400);
+  box-shadow: 0 0 120px var(--sky400), 0 0 200px var(--sky400);
+}
+
+.topRus::before {
+  background-color: var(--violet400);
+  box-shadow: 0 0 120px var(--violet400), 0 0 200px var(--violet400);
+}

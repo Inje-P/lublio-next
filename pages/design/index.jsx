@@ -6,12 +6,13 @@ import TableVertical from "@/components/TableVertical";
 import Header from "@/components/Header";
 import BBSList from "@/components/BBSList";
 import Box2 from "@/components/Box2";
+import { CubeFra, CubeRus } from "@/components/Cube";
 
 // Example
 import data from "@/assets/json/post/post_ex.json";
 
 export default function DesignPage() {
-  const [section, setSection] = useState(2);
+  const [section, setSection] = useState(3);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -61,6 +62,7 @@ export default function DesignPage() {
       <div className="wrapper">
         <button onClick={() => setSection(1)}>Section 1</button>
         <button onClick={() => setSection(2)}>Section 2</button>
+        <button onClick={() => setSection(3)}>Section 3</button>
       </div>
 
       {section == 1 ? (
@@ -197,6 +199,18 @@ export default function DesignPage() {
           />
           <h2>BBS List</h2>
           <BBSList props={data} />
+        </div>
+      ) : null}
+
+      {section == 3 ? (
+        <div
+          className="wrapper"
+          style={{ marginTop: "0px", paddingLeft: "200px" }}
+        >
+          <CubeFra />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeRus />
+          <div style={{ width: "100%", height: "200px" }}></div>
         </div>
       ) : null}
     </>

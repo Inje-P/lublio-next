@@ -197,15 +197,18 @@ export default function AboutRussia() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Российская Федерация</h1>
-            <h2 className="riseUp_2">About Russia</h2>
-            <Breadcrumbs />
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Российская Федерация</h1>
+              <h3 className="riseUp_2">About Russia</h3>
+              <p className="riseUp_3">
+                Discover Russia's vibrant culture, history, and language through
+                interactive lessons designed to enhance your learning
+                experience.
+              </p>
+            </div>
           </div>
-          <StyledSectionRus
-            icon="globe"
-            description="Discover Russia's vibrant culture, history, and language through interactive lessons designed to enhance your learning experience."
-          />
-          <div className={`${styles.menu} riseUp_3`}>
+          <Breadcrumbs />
+          <div className={`${styles.menu} riseUp_4`}>
             {chapters.map((chapter) => (
               <Box
                 key={chapter.index}

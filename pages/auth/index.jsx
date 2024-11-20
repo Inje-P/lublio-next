@@ -1,7 +1,10 @@
+"use client";
+
 import Head from "next/head";
-import Button from "@/components/Button";
+import Link from "next/link";
+import { signIn } from "next-auth/react";
+import { FaGoogle, FaDiscord } from "react-icons/fa";
 import styles from "@/styles/Auth.module.css";
-import Header from "@/components/Header";
 
 export default function Auth() {
   return (
@@ -60,10 +63,32 @@ export default function Auth() {
           <span></span>
         </div>
         <div className={styles.auth}>
-          <h1 className={`${styles.authTitle} fade_1`}>LVBLIO</h1>
-          <div className={`${styles.authButtons} fade_2`}>
-            <Button path="/explore" title="Sign-In" />
-            <Button path="/explore" title="Sign-Up" />
+          <Link href="/">
+            <h1 className={`${styles.authTitle} fade_1`}>LVBLIO</h1>
+          </Link>
+          <div className={styles.authButtons}>
+            <button onClick={() => signIn("google")}>
+              <FaGoogle
+                style={{
+                  width: "18px",
+                  height: "18px",
+                  marginRight: "7px",
+                  transform: "translateY(3px)",
+                }}
+              />
+              Sign in with Google
+            </button>
+            <button onClick={() => signIn("discord")}>
+              <FaDiscord
+                style={{
+                  width: "18px",
+                  height: "18px",
+                  marginRight: "7px",
+                  transform: "translateY(3px)",
+                }}
+              />
+              Sign in with Discord
+            </button>
           </div>
         </div>
       </div>
