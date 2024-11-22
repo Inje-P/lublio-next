@@ -19,26 +19,31 @@ export default function RussianGrammar() {
     },
     {
       index: 3,
+      title: "Существительные на -Ь",
+      subtitle: "Nouns in -Ь",
+    },
+    {
+      index: 4,
       title: "Родительный падеж (№ 2)",
       subtitle: "Genitive case",
     },
     {
-      index: 4,
+      index: 5,
       title: "Дательный падеж (№ 3)",
       subtitle: "Dative case",
     },
     {
-      index: 5,
+      index: 6,
       title: "Винительный падеж (№ 4)",
       subtitle: "Accusative case",
     },
     {
-      index: 6,
+      index: 7,
       title: "Творительный падеж (№ 5)",
       subtitle: "Instrumental case",
     },
     {
-      index: 7,
+      index: 8,
       title: "Предложный падеж (№ 6)",
       subtitle: "Prepositional case",
     },

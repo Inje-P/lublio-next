@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
-import { CubeRus } from "@/components/Cube";
+import { CubeRus3 } from "@/components/Cube";
 import styles from "@/styles/Russian.module.css";
 
 export default function Russian() {
@@ -61,20 +61,18 @@ export default function Russian() {
                 Indo-European language family, spoken by approximately 250
                 million people in Russia and neighboring countries. It is an
                 official language of the United Nations and plays an important
-                role in space-related terminology and science and technology. It
-                has a rich literary tradition and is the working language of
-                world-renowned authors such as Tolstoy and Dostoevsky.
+                role in space-related terminology and science and technology.
               </p>
             </div>
             <div className={`${styles.titleRight} riseUp_4`}>
-              <CubeRus />
+              <CubeRus3 />
             </div>
           </div>
           <div className={`${styles.menu} riseUp_5`}>
             <Box
               path="/russian/bootcamp"
-              title="Bootcamp"
-              subtitle="Training"
+              title="Тренировочный лагерь"
+              subtitle="Bootcamp"
               description="Люблио - это не только изучение языка, но и свобода, позволяющая уверенно исследовать мир."
             />
             <Box

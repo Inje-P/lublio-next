@@ -4,7 +4,7 @@
  * ──────────────────────────────
  */
 
- .tableVertical {
+.tableVertical {
   display: table;
   table-layout: fixed;
   width: 100%;

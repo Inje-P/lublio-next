@@ -56,10 +56,8 @@ export default function AboutGermany() {
       <Header />
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
-          <div className={styles.title}>
-            <h1>Germany</h1>
-            <Breadcrumbs />
-          </div>
+          <div className={styles.title}></div>
+          <Breadcrumbs />
           <div className={styles.contents}>
             <GermanCities />
           </div>

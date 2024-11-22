@@ -9,8 +9,8 @@ export default function FrenchGrammar() {
   const part1 = [
     {
       index: 1,
-      title: "Bestimmter Artikel",
-      subtitle: "Definite article",
+      title: "Le genre",
+      subtitle: "Gender of nouns",
     },
     {
       index: 2,

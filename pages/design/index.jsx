@@ -6,7 +6,14 @@ import TableVertical from "@/components/TableVertical";
 import Header from "@/components/Header";
 import BBSList from "@/components/BBSList";
 import Box2 from "@/components/Box2";
-import { CubeFra, CubeRus } from "@/components/Cube";
+import {
+  CubeFra1,
+  CubeFra2,
+  CubeFra3,
+  CubeRus1,
+  CubeRus2,
+  CubeRus3,
+} from "@/components/Cube";
 
 // Example
 import data from "@/assets/json/post/post_ex.json";
@@ -207,9 +214,17 @@ export default function DesignPage() {
           className="wrapper"
           style={{ marginTop: "0px", paddingLeft: "200px" }}
         >
-          <CubeFra />
+          <CubeFra1 />
           <div style={{ width: "100%", height: "200px" }}></div>
-          <CubeRus />
+          <CubeFra2 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeFra3 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeRus1 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeRus2 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeRus3 />
           <div style={{ width: "100%", height: "200px" }}></div>
         </div>
       ) : null}
