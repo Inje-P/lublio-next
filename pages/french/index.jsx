@@ -54,8 +54,8 @@ export default function French() {
         <div className={styles.wrapper}>
           <div className={styles.title}>
             <div className={styles.titleLeft}>
-              <h1 className="riseUp_1">Franco</h1>
-              <h3 className="riseUp_2">Francophone Community</h3>
+              <h1 className="riseUp_1">Français</h1>
+              <h3 className="riseUp_2">French</h3>
               <p className="riseUp_3">
                 French is a language of the Romance branch of the Indo-European
                 language family and is an official language in 29 countries

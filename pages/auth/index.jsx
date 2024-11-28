@@ -4,9 +4,12 @@ import Head from "next/head";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { FaGoogle, FaDiscord } from "react-icons/fa";
+import { useRouter } from "next/router";
 import styles from "@/styles/Auth.module.css";
 
 export default function Auth() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -67,6 +70,29 @@ export default function Auth() {
             <h1 className={`${styles.authTitle} fade_1`}>LVBLIO</h1>
           </Link>
           <div className={styles.authButtons}>
+            {/* <form className={styles.styledForm}>
+              <ul>
+                <li>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                </li>
+              </ul>
+            </form> */}
+            {/* <button>Sign In</button> */}
             <button onClick={() => signIn("google")}>
               <FaGoogle
                 style={{
@@ -89,6 +115,13 @@ export default function Auth() {
               />
               Sign in with Discord
             </button>
+            {/* <button
+              onClick={() => {
+                router.push("/auth/signup");
+              }}
+            >
+              Sign up
+            </button> */}
           </div>
         </div>
       </div>

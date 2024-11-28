@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
+import { CubeDeu3 } from "@/components/Cube";
 import styles from "@/styles/German.module.css";
 
 export default function German() {
@@ -52,18 +53,21 @@ export default function German() {
       <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Deutsch</h1>
-            <h2 className="riseUp_2">German</h2>
-            <p className="riseUp_3">
-              German is a language of the Germanic branch of the Indo-European
-              language family, spoken by about 100 million people in Germany,
-              Austria, Switzerland, and elsewhere. It is known as the language
-              of academia and philosophy, and was the written language of
-              Goethe, Kant, and many other intellectuals. As the main official
-              language of the European Union, it is also a central language of
-              the European economy and plays an important role in science and
-              technology.
-            </p>
+            <div className={styles.titleLeft}>
+              <h1 className="riseUp_1">Deutsch</h1>
+              <h2 className="riseUp_2">German</h2>
+              <p className="riseUp_3">
+                German is a language of the Germanic branch of the Indo-European
+                language family, spoken by about 100 million people in Germany,
+                Austria, Switzerland, and elsewhere. As the main official
+                language of the European Union, it is also a central language of
+                the European economy and plays an important role in science and
+                technology.
+              </p>
+            </div>
+            <div className={`${styles.titleRight} riseUp_4`}>
+              <CubeDeu3 />
+            </div>
           </div>
           <div className={`${styles.menu} riseUp_4`}>
             <Box

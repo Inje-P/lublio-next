@@ -77,19 +77,19 @@ export default function Explore() {
         <div className={styles.main}>
           <Link href="/french" className="fade_2">
             <div className={styles.btnFrench}>
-              <h2 className={styles.btnFrenchTitle}>Franco</h2>
+              <h2 className={styles.btnFrenchTitle}>Français</h2>
             </div>
           </Link>
-          <Link href="/russian" className="fade_3">
+          <Link href="/german" className="fade_3">
+            <div className={styles.btnGerman}>
+              <h2 className={styles.btnGermanTitle}>Deutsch</h2>
+            </div>
+          </Link>
+          <Link href="/russian" className="fade_4">
             <div className={styles.btnRussian}>
               <h2 className={styles.btnRussianTitle}>Russo</h2>
             </div>
           </Link>
-          {/* <Link href="/german" className="fade_3">
-            <div className={styles.btnGerman}>
-              <h2 className={styles.btnGermanTitle}>Deutsch</h2>
-            </div>
-          </Link> */}
         </div>
       </div>
     </>

@@ -6,6 +6,39 @@ import { CubeFra1 } from "@/components/Cube";
 import styles from "@/styles/French.module.css";
 
 export default function FrenchBootcamp() {
+  const chapterA1 = [
+    {
+      index: 1,
+      title: "Bestimmter Artikel",
+      subtitle: "Definite article",
+    },
+    {
+      index: 2,
+      title: "Unbestimmter Artikel",
+      subtitle: "Indefinite article",
+    },
+    {
+      index: 3,
+      title: "Demonstrativartikel",
+      subtitle: "Demonstrative article",
+    },
+    {
+      index: 4,
+      title: "Interrogativartikel",
+      subtitle: "Interrogative article",
+    },
+    {
+      index: 5,
+      title: "Negativer Artikel",
+      subtitle: "Negative article",
+    },
+    {
+      index: 6,
+      title: "Possesivartikel",
+      subtitle: "Possessive article",
+    },
+  ];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

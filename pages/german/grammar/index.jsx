@@ -310,8 +310,10 @@ export default function GermanGrammar() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Deutsche Grammatik</h1>
-            <h2 className="riseUp_2">German Grammar</h2>
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Deutsche Grammatik</h1>
+              <h2 className="riseUp_2">German Grammar</h2>
+            </div>
           </div>
           <div className={styles.contents}>
             <div className="buttons">

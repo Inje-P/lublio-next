@@ -54,8 +54,8 @@ export default function Russian() {
         <div className={styles.wrapper}>
           <div className={styles.title}>
             <div className={styles.titleLeft}>
-              <h1 className="riseUp_1">Russo</h1>
-              <h3 className="riseUp_2">Russophone Community</h3>
+              <h1 className="riseUp_1">Русский</h1>
+              <h3 className="riseUp_2">Russian</h3>
               <p className="riseUp_3">
                 Russian is a member of the East Slavic branch of the
                 Indo-European language family, spoken by approximately 250

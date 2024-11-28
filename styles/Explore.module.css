@@ -288,7 +288,7 @@
   position: relative;
   display: block;
   width: 100%;
-  height: 50%;
+  height: 33.333%;
   z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
@@ -302,8 +302,8 @@
 .btnGerman:hover,
 .btnRussian:hover {
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
   backdrop-filter: blur(2px);
 }
 
@@ -328,8 +328,8 @@
 .btnFrench:hover .btnFrenchTitle,
 .btnGerman:hover .btnGermanTitle,
 .btnRussian:hover .btnRussianTitle {
-  letter-spacing: 5px;
-  text-indent: 5px;
+  letter-spacing: 3px;
+  text-indent: 3px;
 }
 
 @keyframes float1 {

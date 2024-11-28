@@ -199,8 +199,8 @@
   margin: 0px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -232,10 +232,10 @@
 
 .styledForm > ul > li > input {
   width: 100%;
-  padding: 20px 15px;
+  padding: 15px;
   margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
   font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -248,12 +248,13 @@
 .styledForm > ul > li > input::placeholder {
   font-family: "Manrope", "Noto Sans KR", "Vazirmatn", sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--zinc300);
 }
 
 .styledForm > ul > li > input:focus {
   background-color: rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .styledForm > ul > li > label {

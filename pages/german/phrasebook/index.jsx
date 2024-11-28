@@ -129,15 +129,18 @@ export default function GermanPhrasebook() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Sprachführer</h1>
-            <h2 className="riseUp_2">Phrasebook</h2>
-            <Breadcrumbs />
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Sprachführer</h1>
+              <h3 className="riseUp_2">Phrasebook</h3>
+              <p className="riseUp_3">
+                Access essential phrases for various scenarios. From everyday
+                interactions to travel emergencies, this section equips you with
+                practical expressions for effective communication.
+              </p>
+            </div>
           </div>
-          <StyledSectionDeu
-            icon="record_voice_over"
-            description="Access essential phrases for various scenarios. From everyday interactions to travel emergencies, this section equips you with practical expressions for effective communication."
-          />
-          <div className={`${styles.menu} riseUp_3`}>
+          <Breadcrumbs />
+          <div className={`${styles.menu} riseUp_4`}>
             {chapters.map((chapter) => (
               <Box
                 key={chapter.id}

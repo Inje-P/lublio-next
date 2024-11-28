@@ -197,14 +197,17 @@ export default function AboutGermany() {
       <div className={styles.bgDark}>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className="riseUp_1">Bundesrepublik Deutschland</h1>
-            <h2 className="riseUp_2">About Germany</h2>
-            <Breadcrumbs />
+            <div className={styles.titleFull}>
+              <h1 className="riseUp_1">Bundesrepublik Deutschland</h1>
+              <h2 className="riseUp_2">About Germany</h2>
+              <p className="riseUp_3">
+                Discover Germany's vibrant culture, history, and language
+                through interactive lessons designed to enhance your learning
+                experience.
+              </p>
+            </div>
           </div>
-          <StyledSectionDeu
-            icon="globe"
-            description="Discover Germany's vibrant culture, history, and language through interactive lessons designed to enhance your learning experience."
-          />
+          <Breadcrumbs />
           <div className={`${styles.menu} riseUp_3`}>
             {chapters.map((chapter) => (
               <Box

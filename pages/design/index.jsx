@@ -10,6 +10,9 @@ import {
   CubeFra1,
   CubeFra2,
   CubeFra3,
+  CubeDeu1,
+  CubeDeu2,
+  CubeDeu3,
   CubeRus1,
   CubeRus2,
   CubeRus3,
@@ -219,6 +222,12 @@ export default function DesignPage() {
           <CubeFra2 />
           <div style={{ width: "100%", height: "200px" }}></div>
           <CubeFra3 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeDeu1 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeDeu2 />
+          <div style={{ width: "100%", height: "200px" }}></div>
+          <CubeDeu3 />
           <div style={{ width: "100%", height: "200px" }}></div>
           <CubeRus1 />
           <div style={{ width: "100%", height: "200px" }}></div>

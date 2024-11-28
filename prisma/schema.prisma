@@ -8,13 +8,13 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique @db.VarChar(255)
-  name     String?  @db.VarChar(255)
-  password String
-  role     Role     @default(USER)
-  posts    Post[]
-  profile  Profile?
+  id        Int        @id @default(autoincrement())
+  email     String     @unique @db.VarChar(255)
+  name      String?    @db.VarChar(255)
+  password  String
+  profile   Profile?
+  posts     Post[]
+  dailylogs DailyLog[]
 }
 
 model Profile {
@@ -42,6 +42,18 @@ model Post {
   authorId  Int
   Tag       Tag?     @relation(fields: [tagId], references: [id])
   tagId     Int?
+}
+
+model DailyLog {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String
+  content   String
+  published Boolean  @default(false)
+  likeCount Int      @default(0)
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  Int
 }
 
 model Tag {

@@ -1,6 +1,9 @@
 .cubeFra1,
 .cubeFra2,
 .cubeFra3,
+.cubeDeu1,
+.cubeDeu2,
+.cubeDeu3,
 .cubeRus1,
 .cubeRus2,
 .cubeRus3 {
@@ -24,6 +27,9 @@
 .cubeFra1 > div,
 .cubeFra2 > div,
 .cubeFra3 > div,
+.cubeDeu1 > div,
+.cubeDeu2 > div,
+.cubeDeu3 > div,
 .cubeRus1 > div,
 .cubeRus2 > div,
 .cubeRus3 > div {
@@ -38,6 +44,9 @@
 .cubeFra1 > div > span,
 .cubeFra2 > div > span,
 .cubeFra3 > div > span,
+.cubeDeu1 > div > span,
+.cubeDeu2 > div > span,
+.cubeDeu3 > div > span,
 .cubeRus1 > div > span,
 .cubeRus2 > div > span,
 .cubeRus3 > div > span {
@@ -59,6 +68,16 @@
   background: linear-gradient(var(--blue900), var(--sky400));
 }
 
+.cubeDeu1 > div > span {
+  background: linear-gradient(var(--amber200), var(--amber100));
+}
+.cubeDeu2 > div > span {
+  background: linear-gradient(var(--amber300), var(--amber200));
+}
+.cubeDeu3 > div > span {
+  background: linear-gradient(var(--yellow600), var(--amber300));
+}
+
 .cubeRus1 > div > span {
   background: linear-gradient(var(--violet400), var(--violet200));
 }
@@ -73,6 +92,9 @@
 .cubeFra1 > div > span:nth-child(1),
 .cubeFra2 > div > span:nth-child(1),
 .cubeFra3 > div > span:nth-child(1),
+.cubeDeu1 > div > span:nth-child(1),
+.cubeDeu2 > div > span:nth-child(1),
+.cubeDeu3 > div > span:nth-child(1),
 .cubeRus1 > div > span:nth-child(1),
 .cubeRus2 > div > span:nth-child(1),
 .cubeRus3 > div > span:nth-child(1) {
@@ -82,6 +104,9 @@
 .cubeFra1 > div > span:nth-child(2),
 .cubeFra2 > div > span:nth-child(2),
 .cubeFra3 > div > span:nth-child(2),
+.cubeDeu1 > div > span:nth-child(2),
+.cubeDeu2 > div > span:nth-child(2),
+.cubeDeu3 > div > span:nth-child(2),
 .cubeRus1 > div > span:nth-child(2),
 .cubeRus2 > div > span:nth-child(2),
 .cubeRus3 > div > span:nth-child(2) {
@@ -91,6 +116,9 @@
 .cubeFra1 > div > span:nth-child(3),
 .cubeFra2 > div > span:nth-child(3),
 .cubeFra3 > div > span:nth-child(3),
+.cubeDeu1 > div > span:nth-child(3),
+.cubeDeu2 > div > span:nth-child(3),
+.cubeDeu3 > div > span:nth-child(3),
 .cubeRus1 > div > span:nth-child(3),
 .cubeRus2 > div > span:nth-child(3),
 .cubeRus3 > div > span:nth-child(3) {
@@ -100,6 +128,9 @@
 .cubeFra1 > div > span:nth-child(4),
 .cubeFra2 > div > span:nth-child(4),
 .cubeFra3 > div > span:nth-child(4),
+.cubeDeu1 > div > span:nth-child(4),
+.cubeDeu2 > div > span:nth-child(4),
+.cubeDeu3 > div > span:nth-child(4),
 .cubeRus1 > div > span:nth-child(4),
 .cubeRus2 > div > span:nth-child(4),
 .cubeRus3 > div > span:nth-child(4) {
@@ -109,6 +140,9 @@
 .topFra1,
 .topFra2,
 .topFra3,
+.topDeu1,
+.topDeu2,
+.topDeu3,
 .topRus1,
 .topRus2,
 .topRus3 {
@@ -131,6 +165,16 @@
   background-color: var(--blue900);
 }
 
+.topDeu1 {
+  background-color: var(--amber200);
+}
+.topDeu2 {
+  background-color: var(--amber300);
+}
+.topDeu3 {
+  background-color: var(--yellow600);
+}
+
 .topRus1 {
   background-color: var(--violet400);
 }
@@ -145,6 +189,9 @@
 .topFra1::before,
 .topFra2::before,
 .topFra3::before,
+.topDeu1::before,
+.topDeu2::before,
+.topDeu3::before,
 .topRus1::before,
 .topRus2::before,
 .topRus3::before {
@@ -171,6 +218,20 @@
   background-color: var(--sky400);
   box-shadow: 0 0 120px var(--sky400), 0 0 200px var(--sky400),
     0 0 300px var(--sky400);
+}
+
+.topDeu1::before {
+  background-color: var(--amber100);
+  box-shadow: 0 0 1px var(--amber100);
+}
+.topDeu2::before {
+  background-color: var(--amber200);
+  box-shadow: 0 0 100px var(--amber200), 0 0 100px var(--amber200);
+}
+.topDeu3::before {
+  background-color: var(--amber300);
+  box-shadow: 0 0 120px var(--amber300), 0 0 200px var(--amber300),
+    0 0 300px var(--amber300);
 }
 
 .topRus1::before {
