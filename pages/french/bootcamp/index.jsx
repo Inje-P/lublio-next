@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
-import { CubeFra1 } from "@/components/Cube";
+import { CubeFra } from "@/components/Cube";
 import styles from "@/styles/French.module.css";
 
 export default function FrenchBootcamp() {
@@ -98,7 +98,7 @@ export default function FrenchBootcamp() {
               </p>
             </div>
             <div className={`${styles.titleRight} riseUp_4`}>
-              <CubeFra1 />
+              <CubeFra />
             </div>
           </div>
           <div className={`${styles.menu} riseUp_5`}>

@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
-import { CubeFra3 } from "@/components/Cube";
+import { CubeFra } from "@/components/Cube";
 import styles from "@/styles/French.module.css";
 
 export default function French() {
@@ -65,7 +65,7 @@ export default function French() {
               </p>
             </div>
             <div className={`${styles.titleRight} riseUp_4`}>
-              <CubeFra3 />
+              <CubeFra />
             </div>
           </div>
           <div className={`${styles.menu} riseUp_5`}>

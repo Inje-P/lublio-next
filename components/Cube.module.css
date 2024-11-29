@@ -1,12 +1,6 @@
-.cubeFra1,
-.cubeFra2,
-.cubeFra3,
-.cubeDeu1,
-.cubeDeu2,
-.cubeDeu3,
-.cubeRus1,
-.cubeRus2,
-.cubeRus3 {
+.cubeFra,
+.cubeDeu,
+.cubeRus {
   position: relative;
   width: 150px;
   height: 150px;
@@ -24,15 +18,9 @@
   }
 }
 
-.cubeFra1 > div,
-.cubeFra2 > div,
-.cubeFra3 > div,
-.cubeDeu1 > div,
-.cubeDeu2 > div,
-.cubeDeu3 > div,
-.cubeRus1 > div,
-.cubeRus2 > div,
-.cubeRus3 > div {
+.cubeFra > div,
+.cubeDeu > div,
+.cubeRus > div {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,15 +29,9 @@
   transform-style: preserve-3d;
 }
 
-.cubeFra1 > div > span,
-.cubeFra2 > div > span,
-.cubeFra3 > div > span,
-.cubeDeu1 > div > span,
-.cubeDeu2 > div > span,
-.cubeDeu3 > div > span,
-.cubeRus1 > div > span,
-.cubeRus2 > div > span,
-.cubeRus3 > div > span {
+.cubeFra > div > span,
+.cubeDeu > div > span,
+.cubeRus > div > span {
   position: absolute;
   top: 0;
   left: 0;
@@ -58,94 +40,49 @@
 }
 
 /* ----------------------------------------------------------- */
-.cubeFra1 > div > span {
-  background: linear-gradient(var(--sky400), var(--sky200));
-}
-.cubeFra2 > div > span {
-  background: linear-gradient(var(--blue600), var(--sky300));
-}
-.cubeFra3 > div > span {
-  background: linear-gradient(var(--blue900), var(--sky400));
+.cubeFra > div > span {
+  background: linear-gradient(rgba(3, 105, 161, 0.1), rgba(56, 189, 248, 0.5));
 }
 
-.cubeDeu1 > div > span {
-  background: linear-gradient(var(--amber200), var(--amber100));
-}
-.cubeDeu2 > div > span {
-  background: linear-gradient(var(--amber300), var(--amber200));
-}
-.cubeDeu3 > div > span {
-  background: linear-gradient(var(--yellow600), var(--amber300));
+.cubeDeu > div > span {
+  background: linear-gradient(rgba(161, 98, 7, 0.1), rgba(252, 211, 77, 0.5));
 }
 
-.cubeRus1 > div > span {
-  background: linear-gradient(var(--violet400), var(--violet200));
-}
-.cubeRus2 > div > span {
-  background: linear-gradient(var(--purple600), var(--violet300));
-}
-.cubeRus3 > div > span {
-  background: linear-gradient(var(--purple900), var(--violet400));
+.cubeRus > div > span {
+  background: linear-gradient(
+    rgba(109, 40, 217, 0.1),
+    rgba(196, 181, 253, 0.5)
+  );
 }
 /* ----------------------------------------------------------- */
 
-.cubeFra1 > div > span:nth-child(1),
-.cubeFra2 > div > span:nth-child(1),
-.cubeFra3 > div > span:nth-child(1),
-.cubeDeu1 > div > span:nth-child(1),
-.cubeDeu2 > div > span:nth-child(1),
-.cubeDeu3 > div > span:nth-child(1),
-.cubeRus1 > div > span:nth-child(1),
-.cubeRus2 > div > span:nth-child(1),
-.cubeRus3 > div > span:nth-child(1) {
+.cubeFra > div > span:nth-child(1),
+.cubeDeu > div > span:nth-child(1),
+.cubeRus > div > span:nth-child(1) {
   transform: rotateY(calc(90deg * 0)) translateZ(75px);
 }
 
-.cubeFra1 > div > span:nth-child(2),
-.cubeFra2 > div > span:nth-child(2),
-.cubeFra3 > div > span:nth-child(2),
-.cubeDeu1 > div > span:nth-child(2),
-.cubeDeu2 > div > span:nth-child(2),
-.cubeDeu3 > div > span:nth-child(2),
-.cubeRus1 > div > span:nth-child(2),
-.cubeRus2 > div > span:nth-child(2),
-.cubeRus3 > div > span:nth-child(2) {
+.cubeFra > div > span:nth-child(2),
+.cubeDeu > div > span:nth-child(2),
+.cubeRus > div > span:nth-child(2) {
   transform: rotateY(calc(90deg * 1)) translateZ(75px);
 }
 
-.cubeFra1 > div > span:nth-child(3),
-.cubeFra2 > div > span:nth-child(3),
-.cubeFra3 > div > span:nth-child(3),
-.cubeDeu1 > div > span:nth-child(3),
-.cubeDeu2 > div > span:nth-child(3),
-.cubeDeu3 > div > span:nth-child(3),
-.cubeRus1 > div > span:nth-child(3),
-.cubeRus2 > div > span:nth-child(3),
-.cubeRus3 > div > span:nth-child(3) {
+.cubeFra > div > span:nth-child(3),
+.cubeDeu > div > span:nth-child(3),
+.cubeRus > div > span:nth-child(3) {
   transform: rotateY(calc(90deg * 2)) translateZ(75px);
 }
 
-.cubeFra1 > div > span:nth-child(4),
-.cubeFra2 > div > span:nth-child(4),
-.cubeFra3 > div > span:nth-child(4),
-.cubeDeu1 > div > span:nth-child(4),
-.cubeDeu2 > div > span:nth-child(4),
-.cubeDeu3 > div > span:nth-child(4),
-.cubeRus1 > div > span:nth-child(4),
-.cubeRus2 > div > span:nth-child(4),
-.cubeRus3 > div > span:nth-child(4) {
+.cubeFra > div > span:nth-child(4),
+.cubeDeu > div > span:nth-child(4),
+.cubeRus > div > span:nth-child(4) {
   transform: rotateY(calc(90deg * 3)) translateZ(75px);
 }
 
-.topFra1,
-.topFra2,
-.topFra3,
-.topDeu1,
-.topDeu2,
-.topDeu3,
-.topRus1,
-.topRus2,
-.topRus3 {
+.topFra,
+.topDeu,
+.topRus {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,47 +91,43 @@
   transform: rotateX(90deg) translateZ(75px);
 }
 
+.bottomFra,
+.bottomDeu,
+.bottomRus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transform: rotateX(90deg) translateZ(-75px);
+}
+
 /* ----------------------------------------------------------- */
-.topFra1 {
-  background-color: var(--sky400);
+.topFra {
+  background-color: rgba(3, 105, 161, 0.1);
 }
-.topFra2 {
-  background-color: var(--blue600);
-}
-.topFra3 {
-  background-color: var(--blue900);
+.bottomFra {
+  background-color: rgba(56, 189, 248, 0.5);
 }
 
-.topDeu1 {
-  background-color: var(--amber200);
+.topDeu {
+  background-color: rgba(161, 98, 7, 0.1);
 }
-.topDeu2 {
-  background-color: var(--amber300);
-}
-.topDeu3 {
-  background-color: var(--yellow600);
+.bottomDeu {
+  background-color: rgba(252, 211, 77, 0.5);
 }
 
-.topRus1 {
-  background-color: var(--violet400);
+.topRus {
+  background-color: rgba(109, 40, 217, 0.1);
 }
-.topRus2 {
-  background-color: var(--purple600);
-}
-.topRus3 {
-  background-color: var(--purple900);
+.bottomRus {
+  background-color: rgba(196, 181, 253, 0.5);
 }
 /* ----------------------------------------------------------- */
 
-.topFra1::before,
-.topFra2::before,
-.topFra3::before,
-.topDeu1::before,
-.topDeu2::before,
-.topDeu3::before,
-.topRus1::before,
-.topRus2::before,
-.topRus3::before {
+.topFra::before,
+.topDeu::before,
+.topRus::before {
   content: "";
   position: absolute;
   top: 0;
@@ -206,45 +139,18 @@
 }
 
 /* ----------------------------------------------------------- */
-.topFra1::before {
-  background-color: var(--sky200);
-  box-shadow: 0 0 1px var(--sky200);
-}
-.topFra2::before {
-  background-color: var(--sky300);
-  box-shadow: 0 0 100px var(--sky300), 0 0 100px var(--sky300);
-}
-.topFra3::before {
+.topFra::before {
   background-color: var(--sky400);
-  box-shadow: 0 0 120px var(--sky400), 0 0 200px var(--sky400),
-    0 0 300px var(--sky400);
+  box-shadow: 0 0 120px var(--sky400), 0 0 200px var(--sky400);
 }
 
-.topDeu1::before {
-  background-color: var(--amber100);
-  box-shadow: 0 0 1px var(--amber100);
-}
-.topDeu2::before {
-  background-color: var(--amber200);
-  box-shadow: 0 0 100px var(--amber200), 0 0 100px var(--amber200);
-}
-.topDeu3::before {
+.topDeu::before {
   background-color: var(--amber300);
-  box-shadow: 0 0 120px var(--amber300), 0 0 200px var(--amber300),
-    0 0 300px var(--amber300);
+  box-shadow: 0 0 120px var(--amber300), 0 0 200px var(--amber300);
 }
 
-.topRus1::before {
-  background-color: var(--violet200);
-  box-shadow: 0 0 1px var(--violet200);
-}
-.topRus2::before {
+.topRus::before {
   background-color: var(--violet300);
-  box-shadow: 0 0 120px var(--violet300), 0 0 120px var(--violet300);
-}
-.topRus3::before {
-  background-color: var(--violet400);
-  box-shadow: 0 0 120px var(--violet400), 0 0 200px var(--violet400),
-    0 0 300px var(--violet400);
+  box-shadow: 0 0 120px var(--violet300), 0 0 200px var(--violet300);
 }
 /* ----------------------------------------------------------- */

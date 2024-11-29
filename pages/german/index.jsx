@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
-import { CubeDeu3 } from "@/components/Cube";
+import { CubeDeu } from "@/components/Cube";
 import styles from "@/styles/German.module.css";
 
 export default function German() {
@@ -66,7 +66,7 @@ export default function German() {
               </p>
             </div>
             <div className={`${styles.titleRight} riseUp_4`}>
-              <CubeDeu3 />
+              <CubeDeu />
             </div>
           </div>
           <div className={`${styles.menu} riseUp_4`}>

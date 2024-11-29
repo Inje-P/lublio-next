@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Box from "@/components/Box";
 import Header from "@/components/Header";
-import { CubeRus3 } from "@/components/Cube";
+import { CubeRus } from "@/components/Cube";
 import styles from "@/styles/Russian.module.css";
 
 export default function Russian() {
@@ -65,7 +65,7 @@ export default function Russian() {
               </p>
             </div>
             <div className={`${styles.titleRight} riseUp_4`}>
-              <CubeRus3 />
+              <CubeRus />
             </div>
           </div>
           <div className={`${styles.menu} riseUp_5`}>
